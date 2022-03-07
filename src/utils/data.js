@@ -29,6 +29,23 @@ const data = {
         title: 'Sustainability Delivered',
         subtitle:
             ' replaces single-use packaging with reusable stainless steel containers',
+
+        ilustrations: {
+            logistics: {
+                image: '../images/logistics.svg',
+                caption: 'Backend logistics support',
+            },
+            costs: {
+                image: '../images/costs.svg',
+                caption:
+                    'Save at least 50% on supply cost and time on inventory tracking/re-orders',
+            },
+            space: {
+                image: '../images/space.svg',
+                caption:
+                    'Save at least 50% on supply cost and time on inventory tracking/re-orders',
+            },
+        },
     },
 };
 
