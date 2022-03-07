@@ -45,6 +45,13 @@
 @import url(./blocks/solution/__title/solution__title.css);
 @import url(./blocks/solution/__subtitle/solution__subtitle.css);
 @import url(./blocks/solution/__subtitle/_type/solution__subtitle_type_orange.css);
+@import url(./blocks/solution/__ilustrations/soulution__ilustrations.css);
+@import url(./blocks/solution/__icon-container/solution__icon-container.css);
+@import url(./blocks/solution/__icon-container/__type/solution__icon-container_type_center.css);
+@import url(./blocks/solution/__icon-container/__type/solution__icon-container_type_bottom.css);
+@import url(./blocks/solution/__icon-inner-container/solution__icon-inner-container.css);
+@import url(./blocks/solution/__icon/solution__icon.css);
+@import url(./blocks/solution/__icon-caption/solution__icon-caption.css);
 
 @import url(./blocks/image-carousel/image-carousel.css);
 @import url(./blocks/image-carousel/__container/image-carousel__container.css);
