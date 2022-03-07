@@ -1,0 +1,6 @@
+.soulution__ilustrations {
+    display: flex;
+    flex-direction: column;
+    max-width: 1058px;
+    width: 100%;
+}
