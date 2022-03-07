@@ -1,0 +1,10 @@
+.infographic__graph-fill {
+    position: absolute;
+    border: 21px solid rgba(255, 152, 32, 1);
+    box-sizing: border-box;
+    height: 236px;
+    width: 236px;
+    border-radius: 50%;
+    transform: rotate(135deg);
+    clip: rect(0px, 135px, 30px, 100px);
+}

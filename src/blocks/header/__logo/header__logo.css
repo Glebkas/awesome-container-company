@@ -1,0 +1,12 @@
+.header__logo {
+    width: 91px;
+    height: 57.6px;
+    background-image: url(../../../../public/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 6px;
+}
+
+.header__logo:hover {
+    background-image: url(../../../../public/images/logo-hover.svg);
+}

@@ -1,0 +1,10 @@
+.image-carousel__button {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #1c383c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

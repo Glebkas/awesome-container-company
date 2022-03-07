@@ -1,0 +1,9 @@
+.infographic__graph-description {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 1);
+    top: 38px;
+    left: 38px;
+    position: absolute;
+    margin: 0;
+}
