@@ -1,7 +1,8 @@
 import React from 'react';
 import Nav from './Nav';
+import ContactButton from './ContactButton';
 
-function Header() {
+function Header(props) {
     return (
         <header className='header'>
             <div className='header__left-container'>
@@ -10,7 +11,7 @@ function Header() {
             </div>
             <div className='header__right-container'>
                 <Nav></Nav>
-                <button className='header__button'>Work with us</button>
+                <ContactButton class='contact-button contact-button_type_header' />
             </div>
         </header>
     );
