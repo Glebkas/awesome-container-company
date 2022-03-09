@@ -1,0 +1,6 @@
+.points-box__point {
+    background-image: url(../../../../public/images/point.svg);
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+}

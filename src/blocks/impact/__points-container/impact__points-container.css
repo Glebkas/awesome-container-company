@@ -1,0 +1,7 @@
+.impact__points-container {
+    display: flex;
+    max-width: 1360px;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 60px;
+}

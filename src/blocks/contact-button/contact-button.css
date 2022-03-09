@@ -1,16 +1,18 @@
-.header__button {
+.contact-button {
     background: #ff9820;
     border: none;
     border-radius: 10px;
     transition: 0.7s;
     color: rgba(255, 255, 255, 1);
-    font-size: 14px;
-    line-height: 17px;
     padding: 13px 24px;
     cursor: pointer;
+    max-width: 200px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 28px;
 }
 
-.header__button:hover {
+.contact-button:hover {
     background: #e78819;
     transition: 0.7s;
 }

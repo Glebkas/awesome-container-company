@@ -1,0 +1,6 @@
+.price-box__arrow {
+    background-image: url(../../../../public/images/arrow.svg);
+    width: 17px;
+    height: 26px;
+    margin: 20px 0 20px 0;
+}
