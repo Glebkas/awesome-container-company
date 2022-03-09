@@ -6,7 +6,9 @@
 @import url(./blocks/header/__right-container/header__right-container.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__title/header__title.css);
-@import url(./blocks/header/__button/header__button.css);
+
+@import url(./blocks/contact-button/contact-button.css);
+@import url(./blocks/contact-button/_type/contact-button_type_header.css);
 
 @import url(./blocks/nav/nav.css);
 @import url(./blocks/nav/__links/nav__links.css);
@@ -57,3 +59,23 @@
 @import url(./blocks/image-carousel/__container/image-carousel__container.css);
 @import url(./blocks/image-carousel/__button/image-carousel__button.css);
 @import url(./blocks/image-carousel/__button/_type/image-carousel__button_type_right.css);
+
+@import url(./blocks/impact/impact.css);
+@import url(./blocks/impact/__title/impact__title.css);
+@import url(./blocks/impact/__points-container/impact__points-container.css);
+
+@import url(./blocks/points-box/points-box.css);
+@import url(./blocks/points-box/__title/points-box__title.css);
+@import url(./blocks/points-box/__list/points-box__list.css);
+@import url(./blocks/points-box/__point/points-box__point.css);
+@import url(./blocks/points-box/__list-item/points-box__list-item.css);
+
+@import url(./blocks/pricing/pricing.css);
+@import url(./blocks/pricing/__top/pricing__top.css);
+@import url(./blocks/pricing/__price-boxes-container/pricing__price-boxes-container.css);
+@import url(./blocks/pricing/__contact-subtitle/pricing__contact-subtitle.css);
+
+@import url(./blocks/price-box/price-box.css);
+@import url(./blocks/price-box/__title/price-box__title.css);
+@import url(./blocks/price-box/__arrow/price-box__arrow.css);
+@import url(./blocks/price-box/__price/price-box__price.css);
