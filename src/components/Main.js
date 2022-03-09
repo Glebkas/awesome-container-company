@@ -6,6 +6,7 @@ import Problem from './Problem';
 import Solution from './Solution';
 import Team from './Team';
 import WorkPlan from './WorkPlan';
+import Partners from './Partners';
 
 function Main() {
     return (
@@ -17,6 +18,7 @@ function Main() {
             <Impact></Impact>
             <Pricing></Pricing>
             <Team></Team>
+            <Partners></Partners>
         </>
     );
 }
