@@ -127,6 +127,7 @@ const data = {
     },
     pricing: {
         title: 'We are an ESG company: we care for social and envirnomental sustainability',
+        image: '../images/container-green.svg',
         description:
             'In 2020 Singapore’s government took on the Green Plan: a whole-of-nation movement to advance Singapore’s national agenda on sustainable development. Our company is a part of its solution to cultivating a Sustainable Living — 1 of the 5 key programmes of SG Green Plan.',
         priceboxs: [
@@ -151,8 +152,39 @@ const data = {
                 price: '$6000 + / month',
             },
         ],
+
+        title2: 'Get in touch with us to calculate prices for your business',
+        bubble: 'We calculate our prices accroding to the amount of containers and deliveries made by your business monthly.',
         contact:
             'Leave your contacts and request, and our manager will reach out to you to establish our futher parntership!',
+    },
+
+    team: {
+        members: [
+            {
+                image: '',
+                name: 'Hung Lam',
+                title: 'Founder / CEO',
+                link: '',
+            },
+            {
+                image: '',
+                name: 'Edwin Phua',
+                title: 'Co-founder / COO',
+                link: '',
+            },
+            {
+                image: '',
+                name: 'Guillaume Catella',
+                title: 'Co-founder / CTO',
+                link: '',
+            },
+        ],
+    },
+
+    partners: {
+        title: 'And Awesome Partners',
+        logos: [],
     },
 };
 
