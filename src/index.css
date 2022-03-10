@@ -60,6 +60,14 @@
 @import url(./blocks/image-carousel/__button/image-carousel__button.css);
 @import url(./blocks/image-carousel/__button/_type/image-carousel__button_type_right.css);
 
+@import url(./blocks/slide/slide.css);
+@import url(./blocks/slide/_active/slide_active.css);
+@import url(./blocks/slide/__image/slide__image.css);
+@import url(./blocks/slide/__points-container/slide__points-container.css);
+@import url(./blocks/slide/__points-title/slide__points-title.css);
+@import url(./blocks/slide/__points-list/slide__points-list.css);
+@import url(./blocks/slide/__points-item/slide__points-item.css);
+
 @import url(./blocks/impact/impact.css);
 @import url(./blocks/impact/__title/impact__title.css);
 @import url(./blocks/impact/__points-container/impact__points-container.css);

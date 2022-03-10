@@ -1,0 +1,5 @@
+.slide__points-list {
+    list-style-type: square;
+    margin: 0;
+    padding-left: 12px;
+}

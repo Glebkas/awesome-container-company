@@ -1,0 +1,7 @@
+.slide {
+    display: flex;
+    max-width: 1212;
+    background-color: white;
+    opacity: 0;
+    transition: 1s;
+}
