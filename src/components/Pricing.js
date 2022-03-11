@@ -20,7 +20,7 @@ function Pricing(props) {
                 ></img>
             </div>
             <div className='pricing__bottom'>
-                <h3 className='pricing__title'>{data.pricing.title2}</h3>
+                <h3 className='pricing__bottom-title'>{data.pricing.title2}</h3>
                 {/* <div className='pricing__price-boxes-container'>
                     {data.pricing.priceboxs.map((pricebox) => (
                         <PriceBox
