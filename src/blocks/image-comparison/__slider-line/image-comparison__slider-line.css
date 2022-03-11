@@ -1,0 +1,7 @@
+.image-comparison__slider-line {
+    display: grid;
+    height: 100%;
+    place-content: center;
+    border-left: 2px solid #ff9820;
+    width: 0;
+}

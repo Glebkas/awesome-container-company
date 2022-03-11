@@ -20,6 +20,12 @@
 @import url(./blocks/hero/__interactive-container/hero__interactive-container.css);
 
 @import url(./blocks/image-comparison/image-comparison.css);
+@import url(./blocks/image-comparison/__slider/image-comparison__slider.css);
+@import url(./blocks/image-comparison/__slider-line/image-comparison__slider-line.css);
+@import url(./blocks/image-comparison/__slider-handle/image-comparison__slider-handle.css);
+@import url(./blocks/image-comparison/__caption-container/image-comparison__caption-container.css);
+@import url(./blocks/image-comparison/__caption/image-comparison__caption.css);
+
 
 @import url(./blocks/chat/chat.css);
 
@@ -80,6 +86,12 @@
 
 @import url(./blocks/pricing/pricing.css);
 @import url(./blocks/pricing/__top/pricing__top.css);
+@import url(./blocks/pricing/__title-container/pricing__title-container.css);
+@import url(./blocks/pricing/__top-title/pricing__top-title.css);
+@import url(./blocks/pricing/__top-description/pricing__top-description.css);
+@import url(./blocks/pricing/__top-image/pricing__top-image.css);
+@import url(./blocks/pricing/__bottom/pricing__bottom.css);
+@import url(./blocks/pricing/__bottom-title/pricing__bottom-title.css);
 @import url(./blocks/pricing/__price-boxes-container/pricing__price-boxes-container.css);
 @import url(./blocks/pricing/__contact-subtitle/pricing__contact-subtitle.css);
 
