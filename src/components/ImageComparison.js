@@ -4,6 +4,8 @@ import {
     ReactCompareSliderImage,
 } from 'react-compare-slider';
 
+import data from '../utils/data';
+
 function ImageComparison() {
     return (
         <div className='image-comparison'>
@@ -18,13 +20,13 @@ function ImageComparison() {
                 itemOne={
                     <ReactCompareSliderImage
                         alt='Image one'
-                        src='https://images.unsplash.com/photo-1438401171849-74ac270044ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1784&q=70'
+                        src={data.hero.imageslider.image1}
                     />
                 }
                 itemTwo={
                     <ReactCompareSliderImage
                         alt='Image two'
-                        src='https://images.unsplash.com/photo-1437809781432-a957377661ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1784&q=70'
+                        src={data.hero.imageslider.image2}
                     />
                 }
                 position={50}
