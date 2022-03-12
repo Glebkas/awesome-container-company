@@ -1,4 +1,5 @@
 .slide_active {
     opacity: 1;
     transition: 1s;
+    width: 100%;
 }

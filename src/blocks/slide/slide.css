@@ -1,6 +1,6 @@
 .slide {
     display: flex;
-    max-width: 1212;
+    max-width: 1212px;
     background-color: white;
     opacity: 0;
     transition: 1s;
