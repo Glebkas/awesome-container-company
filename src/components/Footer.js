@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <section className='footer'>
+        <section id='contacts' className='footer'>
             <div className='footer__top'>
                 <div>
                     <p></p>
