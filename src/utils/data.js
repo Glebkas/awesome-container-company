@@ -2,6 +2,10 @@ const data = {
     hero: {
         title: 'Help our environment by eliminating single-use plastics from your delivery with',
         companyname: 'Awesome Container Company',
+        imageslider: {
+            image1: '../images/container1.jpg',
+            image2: '../images/waste.jpg',
+        },
     },
     problem: {
         title: 'Single-use packaging: bad for the planet, bad for business',
