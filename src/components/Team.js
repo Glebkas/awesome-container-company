@@ -3,7 +3,7 @@ import data from '../utils/data';
 
 function Team() {
     return (
-        <section className='team'>
+        <section id='team' className='team'>
             <h2 className='team__title'>Team</h2>
 
             <div className='team__container'>
