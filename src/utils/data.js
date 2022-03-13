@@ -166,19 +166,19 @@ const data = {
     team: {
         members: [
             {
-                image: '',
+                image: '../images/hunglam.png',
                 name: 'Hung Lam',
                 title: 'Founder / CEO',
                 link: '',
             },
             {
-                image: '',
+                image: '../images/edwinphua.png',
                 name: 'Edwin Phua',
                 title: 'Co-founder / COO',
                 link: '',
             },
             {
-                image: '',
+                image: '../images/guillaumecatella.png',
                 name: 'Guillaume Catella',
                 title: 'Co-founder / CTO',
                 link: '',
@@ -188,7 +188,51 @@ const data = {
 
     partners: {
         title: 'And Awesome Partners',
-        logos: [],
+        logos: [
+            '../images/chefatwork.png',
+            '../images/stewards.png',
+            '../images/ninjavan.png',
+            '../images/creatella.png',
+            '../images/goa.png',
+        ],
+    },
+
+    footer: {
+        section1: {
+            title: 'Let’s get in touch',
+            email: 'Hello@AwesomeContaners.com',
+            address:
+                'Address: 71 UBI Road 1, #08-42, Oxley Bizhub, Singapore 408732',
+        },
+        section2: {
+            title: 'Follow us',
+            socials: [
+                {
+                    image: '../images/instagram.svg',
+                    title: 'AwesomeContainers',
+                    url: 'https://www.instagram.com/awesomecontainers',
+                },
+            ],
+        },
+        section3: {
+            title: 'Where we work',
+            currentplaces: {
+                title: 'We currently operate in:',
+                places: ['Singapore'],
+            },
+            planedplaces: {
+                title: 'Planning to launch in 2022',
+                places: [
+                    'UK',
+                    'EU',
+                    'OSEAN',
+                    'China',
+                    'Vietnam',
+                    'Malaysia',
+                    'Taiwan',
+                ],
+            },
+        },
     },
 };
 
