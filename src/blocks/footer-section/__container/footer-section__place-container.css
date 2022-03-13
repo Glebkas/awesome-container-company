@@ -1,0 +1,4 @@
+.footer-section__place-container{
+    display: flex;
+    flex-wrap: wrap;
+}

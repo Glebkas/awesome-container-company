@@ -1,0 +1,10 @@
+.team-member__link {
+    background-image: url(../../../../public/images/linkedin.svg);
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 102, 153, 1);
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}

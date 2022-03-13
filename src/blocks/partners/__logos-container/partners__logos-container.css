@@ -1,0 +1,8 @@
+.partners__logos-container {
+    max-width: 772px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:75px 90px;
+}

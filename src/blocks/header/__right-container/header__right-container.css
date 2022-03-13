@@ -1,3 +1,6 @@
 .header__right-container {
     display: flex;
+    width: 100%;
+    justify-content: end;
+    min-width: 725px;
 }
