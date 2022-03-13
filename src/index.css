@@ -26,7 +26,6 @@
 @import url(./blocks/image-comparison/__caption-container/image-comparison__caption-container.css);
 @import url(./blocks/image-comparison/__caption/image-comparison__caption.css);
 
-
 @import url(./blocks/chat/chat.css);
 
 @import url(./blocks/problem/problem.css);
@@ -99,3 +98,31 @@
 @import url(./blocks/price-box/__title/price-box__title.css);
 @import url(./blocks/price-box/__arrow/price-box__arrow.css);
 @import url(./blocks/price-box/__price/price-box__price.css);
+
+@import url(./blocks/team/team.css);
+@import url(./blocks/team/__title/team__title.css);
+@import url(./blocks/team/__container/team__container.css);
+
+@import url(./blocks/team-member/team-member.css);
+@import url(./blocks/team-member/__image/team-member__image.css);
+@import url(./blocks/team-member/__name/team-member__name.css);
+@import url(./blocks/team-member/__title/team-member__title.css);
+@import url(./blocks/team-member/__link/team-member__link.css);
+
+@import url(./blocks/partners/partners.css);
+@import url(./blocks/partners/__title/partners__title.css);
+@import url(./blocks/partners/__logos-container/partners__logos-container.css);
+@import url(./blocks/partners/__logo-image/partners__logo-image.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__top/footer__top.css);
+@import url(./blocks/footer/__bottom/footer__bottom.css);
+
+@import url(./blocks/footer-section/footer-section.css);
+@import url(./blocks/footer-section/__title/footer-section__title.css);
+@import url(./blocks/footer-section/__container/footer-section__place-container.css);
+@import url(./blocks/footer-section/__item/footer-section__item.css);
+@import url(./blocks/footer-section/_type/footer-section_type_place.css);
+@import url(./blocks/footer-section/__item/_type/footer-section__item_type_place.css);
+@import url(./blocks/footer-section/__social-icon/footer-section__social-icon.css);
+@import url(./blocks/footer-section/__item/_type/footer-section__item_type_link.css);
