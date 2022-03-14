@@ -8,7 +8,7 @@ import Team from './Team';
 import WorkPlan from './WorkPlan';
 import Partners from './Partners';
 
-function Main() {
+function Main(props) {
     return (
         <>
             <Hero></Hero>
@@ -16,7 +16,7 @@ function Main() {
             <Solution></Solution>
             <WorkPlan></WorkPlan>
             <Impact></Impact>
-            <Pricing></Pricing>
+            <Pricing openPopUp={props.openPopUp}></Pricing>
             <Team></Team>
             <Partners></Partners>
         </>
