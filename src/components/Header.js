@@ -11,7 +11,7 @@ function Header(props) {
             </div>
             <div className='header__right-container'>
                 <Nav></Nav>
-                <ContactButton class='contact-button contact-button_type_header' />
+                <ContactButton openPopUp={props.openPopUp} class='contact-button contact-button_type_header' />
             </div>
         </header>
     );
