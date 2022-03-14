@@ -1,8 +1,9 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
-function InfoGraphic() {
+export const InfoGraphic = React.forwardRef((props, ref) => {
     return (
-        <div className='infographic'>
+        <div ref={ref} className='infographic'>
             <p className='infographic__title'>Single-use plastics</p>
             <div className='infographic__graph-wrap'>
                 <div className='infographic__graph-circle'></div>
@@ -16,6 +17,6 @@ function InfoGraphic() {
             </div>
         </div>
     );
-}
+});
 
-export default InfoGraphic;
+export const MInfoGraphic = motion(InfoGraphic);
