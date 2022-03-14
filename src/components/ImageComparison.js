@@ -4,11 +4,13 @@ import {
     ReactCompareSliderImage,
 } from 'react-compare-slider';
 
+import { motion } from 'framer-motion';
+
 import data from '../utils/data';
 
-function ImageComparison() {
+export const ImageComparison = React.forwardRef((props, ref) => {
     return (
-        <div className='image-comparison'>
+        <div ref={ref} className='image-comparison'>
             <ReactCompareSlider
                 className='image-comparison__slider'
                 boundsPadding={0}
@@ -39,6 +41,6 @@ function ImageComparison() {
             </div>
         </div>
     );
-}
+});
 
-export default ImageComparison;
+export const MImageComparison = motion(ImageComparison);
