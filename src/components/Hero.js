@@ -1,23 +1,45 @@
 import React from 'react';
-import Chat from './Chat';
-import ImageComparison from './ImageComparison';
+import { MChat } from './Chat';
+import { motion } from 'framer-motion';
+import {
+    heroTextAnimation,
+    imageComparisonAnimation,
+    chatAnimation,
+} from '../utils/animation';
+import { MImageComparison } from './ImageComparison';
 
 function Hero() {
     return (
-        <section className='hero'>
-            <h2 className='hero__title'>
+        <motion.section
+            viewport={{ once: true }}
+            initial='hidden'
+            whileInView='visible'
+            className='hero'
+        >
+            <motion.h2
+                custom={1}
+                variants={heroTextAnimation}
+                className='hero__title'
+            >
                 Help our environment by eliminating single-use plastics from
                 your delivery with<br></br>
-                <span className='hero__title_type_orange'>
+                <motion.span
+                    custom={3}
+                    variants={heroTextAnimation}
+                    className='hero__title_type_orange'
+                >
                     Awesome Container Company
-                </span>
-            </h2>
+                </motion.span>
+            </motion.h2>
 
             <div className='hero__interactive-container'>
-                <ImageComparison />
-                <Chat></Chat>
+                <MImageComparison
+                    variants={imageComparisonAnimation}
+                    custom={3}
+                />
+                <MChat variants={chatAnimation} custom={3}></MChat>
             </div>
-        </section>
+        </motion.section>
     );
 }
 
