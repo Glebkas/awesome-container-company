@@ -1,7 +1,9 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
-function Chat() {
-    return <div className='chat'>Chat</div>;
-}
+export const Chat = React.forwardRef((props, ref) => {
+    return( <div  ref={ref} div className='chat'>Chat</div>
+    );
+});
 
-export default Chat;
+export const MChat = motion(Chat);
