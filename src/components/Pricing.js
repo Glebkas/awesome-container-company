@@ -31,7 +31,7 @@ function Pricing(props) {
                     ))}
                 </div> */}
             </div>
-            <ContactButton class='contact-button' />
+            <ContactButton openPopUp={props.openPopUp} class='contact-button' />
             <p className='pricing__contact-subtitle'>{data.pricing.contact}</p>
         </section>
     );
