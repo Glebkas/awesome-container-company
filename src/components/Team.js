@@ -1,13 +1,12 @@
 import React from 'react';
-import data from '../utils/data';
 
-function Team() {
+function Team(props) {
     return (
         <section id='team' className='team'>
             <h2 className='team__title'>An Awesome Team</h2>
 
             <div className='team__container'>
-                {data.team.members.map((member) => (
+                {props.appData.team.members.map((member) => (
                     <div key={member.id} className='team-member'>
                         <img
                             className='team-member__image'
