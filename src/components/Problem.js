@@ -1,6 +1,5 @@
 import React from 'react';
 import { MInfoGraphic } from './InfoGraphic';
-import data from '../utils/data';
 import { motion } from 'framer-motion';
 
 import {
@@ -9,7 +8,7 @@ import {
     problemGraphAnimation,
 } from '../utils/animation';
 
-function Problem() {
+function Problem(props) {
     return (
         <section id='problem' className='problem'>
             <motion.div
@@ -18,10 +17,7 @@ function Problem() {
                 whileInView='visible'
                 className='problem__stats'
             >
-                <MInfoGraphic
-                    variants={problemGraphAnimation}
-                    custom={4}
-                />
+                <MInfoGraphic variants={problemGraphAnimation} custom={4} />
                 <div className='problem__stats-info'>
                     <motion.h2
                         variants={problemTextAnimation}
@@ -56,7 +52,7 @@ function Problem() {
                 whileInView='visible'
                 className='problem__image-grid'
             >
-                {data.problem.images.map((image, index) => (
+                {props.appData.problem.images.map((image, index) => (
                     <motion.div
                         variants={problemImageAnimation}
                         custom={index + 1}
