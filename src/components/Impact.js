@@ -6,12 +6,12 @@ function Impact() {
         <section id='impact' className='impact'>
             <h2 className='impact__title'>{data.impact.title}</h2>
             <div className='impact__points-container'>
-                {data.impact.pointsboxs.map((pointsbox, index) => (
+                {data.impact.pointsBoxs.map((pointsBox, index) => (
                     <PointsBox
-                        key={index}
-                        id={pointsbox.id}
-                        title={pointsbox.title}
-                        points={pointsbox.points}
+                        key={pointsBox.id}
+                        id={pointsBox.id}
+                        title={pointsBox.title}
+                        points={pointsBox.points}
                     />
                 ))}
             </div>
