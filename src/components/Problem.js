@@ -21,7 +21,7 @@ function Problem() {
                 <MInfoGraphic
                     variants={problemGraphAnimation}
                     custom={4}
-                ></MInfoGraphic>
+                />
                 <div className='problem__stats-info'>
                     <motion.h2
                         variants={problemTextAnimation}
