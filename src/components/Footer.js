@@ -21,8 +21,12 @@ function Footer() {
                         {data.footer.section2.title}
                     </p>
                     {data.footer.section2.socials.map((social) => (
-                        <div className='footer-section__item'>
-                            <img className='footer-section__social-icon' src={social.image} alt='social link'></img>
+                        <div key={social.id} className='footer-section__item'>
+                            <img
+                                className='footer-section__social-icon'
+                                src={social.image}
+                                alt='social link'
+                            ></img>
                             <a
                                 className='footer-section__item footer-section__item_type_link'
                                 href={social.url}
@@ -38,24 +42,30 @@ function Footer() {
                     </p>
 
                     <p className='footer-section__item'>
-                        {data.footer.section3.currentplaces.title}
+                        {data.footer.section3.currentPlaces.title}
                     </p>
                     <div className='footer-section__place-container'>
-                        {data.footer.section3.currentplaces.places.map(
-                            (currentPlace) => (
-                                <p className='footer-section__item footer-section__item_type_place'>
+                        {data.footer.section3.currentPlaces.places.map(
+                            (currentPlace, index) => (
+                                <p
+                                    key={`currentPlace${index}`}
+                                    className='footer-section__item footer-section__item_type_place'
+                                >
                                     {currentPlace}
                                 </p>
                             )
                         )}
                     </div>
                     <p className='footer-section__item'>
-                        {data.footer.section3.planedplaces.title}
+                        {data.footer.section3.planedPlaces.title}
                     </p>
                     <div className='footer-section__place-container'>
-                        {data.footer.section3.planedplaces.places.map(
-                            (planedPlace) => (
-                                <p className='footer-section__item footer-section__item_type_place'>{`${planedPlace},`}</p>
+                        {data.footer.section3.planedPlaces.places.map(
+                            (planedPlace, index) => (
+                                <p
+                                    key={`planedPlace${index}`}
+                                    className='footer-section__item footer-section__item_type_place'
+                                >{`${planedPlace},`}</p>
                             )
                         )}
                     </div>
