@@ -1,12 +1,11 @@
 import React from 'react';
-import data from '../utils/data';
 import PointsBox from './PointsBox';
-function Impact() {
+function Impact(props) {
     return (
         <section id='impact' className='impact'>
-            <h2 className='impact__title'>{data.impact.title}</h2>
+            <h2 className='impact__title'>{props.appData.impact.title}</h2>
             <div className='impact__points-container'>
-                {data.impact.pointsBoxs.map((pointsBox, index) => (
+                {props.appData.impact.pointsBoxs.map((pointsBox, index) => (
                     <PointsBox
                         key={pointsBox.id}
                         id={pointsBox.id}
@@ -15,7 +14,6 @@ function Impact() {
                     />
                 ))}
             </div>
-            
         </section>
     );
 }
