@@ -1,20 +1,22 @@
 import React from 'react';
-import data from '../utils/data';
 
-function ImageCarousel() {
-    const slides = data.solution.slider;
-    const [currentslide, setCurrentslide] = React.useState(0);
-    const slidesLength = slides.length;
+function ImageCarousel(props) {
+    const slides = React.useMemo(
+        () => props.appData.solution.slider,
+        [props.appData.solution.slider]
+    );
+    const [currentSlide, setCurrentSlide] = React.useState(0);
+    const slidesLength = React.useMemo(() => slides.length, [slides]);
 
-    const nextSlide = () => {
-        setCurrentslide(
-            currentslide === slidesLength - 1 ? 0 : currentslide + 1
+    const nextSlide = React.useCallback(() => {
+        setCurrentSlide(
+            currentSlide === slidesLength - 1 ? 0 : currentSlide + 1
         );
-    };
+    }, [currentSlide, slidesLength]);
 
     const prevSlide = () => {
-        setCurrentslide(
-            currentslide === 0 ? slidesLength - 1 : currentslide - 1
+        setCurrentSlide(
+            currentSlide === 0 ? slidesLength - 1 : currentSlide - 1
         );
     };
 
@@ -22,7 +24,7 @@ function ImageCarousel() {
         return null;
     }
 
-    return (
+    return Array.isArray(slides) || slides.length <= 0 ? (
         <div className='image-carousel'>
             <div
                 className='image-carousel__button'
@@ -31,11 +33,11 @@ function ImageCarousel() {
             {slides.map((slide, index) => (
                 <div
                     className={
-                        index === currentslide ? 'slide slide_active' : 'slide'
+                        index === currentSlide ? 'slide slide_active' : 'slide'
                     }
-                    key={index}
+                    key={slide.id}
                 >
-                    {index === currentslide && (
+                    {index === currentSlide && (
                         <>
                             <img
                                 alt='test'
@@ -45,20 +47,30 @@ function ImageCarousel() {
                             <div className='slide__points-container'>
                                 <p className='slide__points-title'>Features</p>
                                 <ul className='slide__points-list'>
-                                    {slide.featurepoints.map((featurepoint) => (
-                                        <li className='slide__points-item'>
-                                            {featurepoint}
-                                        </li>
-                                    ))}
+                                    {slide.featurePoints.map(
+                                        (featurepoint, index) => (
+                                            <li
+                                                key={index}
+                                                className='slide__points-item'
+                                            >
+                                                {featurepoint}
+                                            </li>
+                                        )
+                                    )}
                                 </ul>
 
                                 <p className='slide__points-title'>Sizing</p>
                                 <ul className='slide__points-list'>
-                                    {slide.sizingpoints.map((sizingpoints) => (
-                                        <li className='slide__points-item'>
-                                            {sizingpoints}
-                                        </li>
-                                    ))}
+                                    {slide.sizingPoints.map(
+                                        (sizingPoints, index) => (
+                                            <li
+                                                key={index}
+                                                className='slide__points-item'
+                                            >
+                                                {sizingPoints}
+                                            </li>
+                                        )
+                                    )}
                                 </ul>
                             </div>
                         </>
@@ -71,6 +83,8 @@ function ImageCarousel() {
                 onClick={nextSlide}
             >{`>`}</div>
         </div>
+    ) : (
+        <div>death</div>
     );
 }
 
