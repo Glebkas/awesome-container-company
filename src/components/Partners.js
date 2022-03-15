@@ -6,8 +6,9 @@ function Partners() {
         <section className='partners'>
             <h2 className='partners__title'>{data.partners.title}</h2>
             <div className='partners__logos-container'>
-                {data.partners.logos.map((logo) => (
+                {data.partners.logos.map((logo, index) => (
                     <img
+                        key={`partner${index}`}
                         className='partners__logo-image'
                         alt='partner '
                         src={logo}
