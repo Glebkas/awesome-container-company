@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageCarousel from './ImageCarousel';
 import data from '../utils/data';
-function Solution() {
+function Solution(props) {
     return (
         <section id='solution' className='solution'>
             <h2 className='solution__title'>{data.solution.title}</h2>
@@ -11,7 +11,7 @@ function Solution() {
                 </span>
                 {data.solution.subtitle}
             </p>
-            <ImageCarousel></ImageCarousel>
+            <ImageCarousel appData={props.appData}></ImageCarousel>
 
             <div className='soulution__ilustrations'>
                 <div className='solution__icon-container'>
