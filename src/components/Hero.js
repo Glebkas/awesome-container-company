@@ -11,7 +11,7 @@ import { MImageComparison } from './ImageComparison';
 function Hero() {
     return (
         <motion.section
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
             initial='hidden'
             whileInView='visible'
             className='hero'
