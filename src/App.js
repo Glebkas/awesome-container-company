@@ -2,11 +2,13 @@ import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import Contactform from './components/Contactform';
+import ContactForm from './components/ContactForm';
+import data from './utils/data';
 
 function App() {
     const [showPopup, setShowPopup] = React.useState(false);
 
+    const appData = data
     const handlePopupToggle = () => {
         setShowPopup(!showPopup);
         console.log(showPopup);
@@ -14,9 +16,9 @@ function App() {
 
     return (
         <>
-            {showPopup && <Contactform closePopup={handlePopupToggle} />}
+            {showPopup && <ContactForm closePopup={handlePopupToggle} />}
             <Header openPopUp={handlePopupToggle} />
-            <Main openPopUp={handlePopupToggle} />
+            <Main appData={appData} openPopUp={handlePopupToggle} />
             <Footer />
         </>
     );
