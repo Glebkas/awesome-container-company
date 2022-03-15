@@ -11,7 +11,7 @@ import { MImageComparison } from './ImageComparison';
 function Hero() {
     return (
         <motion.section
-            // viewport={{ once: true }}
+            viewport={{ once: true }}
             initial='hidden'
             whileInView='visible'
             className='hero'
@@ -22,7 +22,7 @@ function Hero() {
                 className='hero__title'
             >
                 Help our environment by eliminating single-use plastics from
-                your delivery with<br></br>
+                your delivery with<br/>
                 <motion.span
                     custom={3}
                     variants={heroTextAnimation}
