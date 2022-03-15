@@ -1,12 +1,11 @@
 import React from 'react';
-import data from '../utils/data';
 
-function Partners() {
+function Partners(props) {
     return (
         <section className='partners'>
-            <h2 className='partners__title'>{data.partners.title}</h2>
+            <h2 className='partners__title'>{props.appData.partners.title}</h2>
             <div className='partners__logos-container'>
-                {data.partners.logos.map((logo, index) => (
+                {props.appData.partners.logos.map((logo, index) => (
                     <img
                         key={`partner${index}`}
                         className='partners__logo-image'
