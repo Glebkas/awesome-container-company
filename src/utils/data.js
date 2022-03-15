@@ -36,8 +36,9 @@ const data = {
 
         slider: [
             {
+                id: 'slide1',
                 image: '../images/container1.jpg',
-                featurepoints: [
+                featurePoints: [
                     'Removable/adjustable divider',
                     'Leak-resistant lid keeps food fresh',
                     'Easy to sanitize and dishwasher safe',
@@ -48,13 +49,14 @@ const data = {
                     '304 (18/8) stainless steel, LDPE #4 plastic lid, PP #5 plastic divider',
                     'Free of BPA, BPS, phthalates and lead',
                 ],
-                sizingpoints: [
+                sizingPoints: [
                     '25oz container size with lid on: 7.75” x 1.75" x 5” Lids: 7.75” x 5”',
                 ],
             },
             {
+                id: 'slide2',
                 image: '../images/container2.jpg',
-                featurepoints: [
+                featurePoints: [
                     'Leak-resistant lid keeps food fresh',
                     'Easy to sanitize and dishwasher safe',
                     'Containers and lids are freezer safe',
@@ -65,15 +67,16 @@ const data = {
                     '304 (18/8) stainless steel, LDPE #4 plastic',
                     'Free of BPA, BPS, phthalates and lead',
                 ],
-                sizingpoints: [
+                sizingPoints: [
                     '16oz, container size with lid on: 4-5/8" x 2.25". Lid is 4.75” diameter',
                     '9oz, container size with lid on: 4" x 2". Lid is 4” diameter',
                     '5oz, container size with lid on: 3.5" x 1.5". Lid is 3.5” diameter',
                 ],
             },
             {
+                id: 'slide3',
                 image: '../images/container3.jpg',
-                featurepoints: [
+                featurePoints: [
                     'Removable 2-section + 4-section divider',
                     'Leak-resistant lid keeps food fresh',
                     'Easy to sanitize and dishwasher safe',
@@ -84,7 +87,7 @@ const data = {
                     '304 (18/8) stainless steel, LDPE #4 plastic lid, PP#5 divider',
                     'Free of BPA, BPS, phthalates and lead',
                 ],
-                sizingpoints: ['100oz (3 liters, 12.5 cups), 9.5” x 3.25”'],
+                sizingPoints: ['100oz (3 liters, 12.5 cups), 9.5” x 3.25”'],
             },
         ],
 
@@ -107,9 +110,9 @@ const data = {
     },
     impact: {
         title: 'Impact',
-        pointsboxs: [
+        pointsBoxs: [
             {
-                id: 1,
+                id: 'pointbox1',
                 title: 'For Businesses',
                 points: [
                     'Save at least 50% on supply cost',
@@ -119,7 +122,7 @@ const data = {
                 ],
             },
             {
-                id: 2,
+                id: 'pointbox2',
                 title: 'For Users',
                 points: [
                     'Remove all chemicals going into food: plastics, BPA, PFAS and other ‘forever chemicals’ used to hold compostable packaging together',
@@ -166,18 +169,21 @@ const data = {
     team: {
         members: [
             {
+                id: 'team-member1',
                 image: '../images/hunglam.png',
                 name: 'Hung Lam',
                 title: 'Founder / CEO',
                 link: '',
             },
             {
+                id: 'team-member2',
                 image: '../images/edwinphua.png',
                 name: 'Edwin Phua',
                 title: 'Co-founder / COO',
                 link: '',
             },
             {
+                id: 'team-member3',
                 image: '../images/guillaumecatella.png',
                 name: 'Guillaume Catella',
                 title: 'Co-founder / CTO',
@@ -208,6 +214,7 @@ const data = {
             title: 'Follow us',
             socials: [
                 {
+                    id: 'social1',
                     image: '../images/instagram.svg',
                     title: 'AwesomeContainers',
                     url: 'https://www.instagram.com/awesomecontainers',
@@ -216,11 +223,11 @@ const data = {
         },
         section3: {
             title: 'Where we work',
-            currentplaces: {
+            currentPlaces: {
                 title: 'We currently operate in:',
                 places: ['Singapore'],
             },
-            planedplaces: {
+            planedPlaces: {
                 title: 'Planning to launch in 2022',
                 places: [
                     'UK',
