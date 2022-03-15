@@ -12,13 +12,13 @@ function Main(props) {
     return (
         <>
             <Hero />
-            <Problem />
+            <Problem appData={props.appData} />
             <Solution appData={props.appData} />
             <WorkPlan />
-            <Impact />
+            <Impact appData={props.appData} />
             <Pricing openPopUp={props.openPopUp} />
-            <Team />
-            <Partners />
+            <Team appData={props.appData} />
+            <Partners appData={props.appData} />
         </>
     );
 }
