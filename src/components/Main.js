@@ -11,14 +11,14 @@ import Partners from './Partners';
 function Main(props) {
     return (
         <>
-            <Hero></Hero>
-            <Problem></Problem>
-            <Solution></Solution>
-            <WorkPlan></WorkPlan>
-            <Impact></Impact>
-            <Pricing openPopUp={props.openPopUp}></Pricing>
-            <Team></Team>
-            <Partners></Partners>
+            <Hero />
+            <Problem />
+            <Solution appData={props.appData} />
+            <WorkPlan />
+            <Impact />
+            <Pricing openPopUp={props.openPopUp} />
+            <Team />
+            <Partners />
         </>
     );
 }
