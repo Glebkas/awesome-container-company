@@ -8,7 +8,7 @@ function Team() {
 
             <div className='team__container'>
                 {data.team.members.map((member) => (
-                    <div className='team-member'>
+                    <div key={member.id} className='team-member'>
                         <img
                             className='team-member__image'
                             alt={member.name}
