@@ -1,9 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-function ImageCarousel(props) {
+export const ImageCarousel = React.forwardRef(({ appData }, ref) => {
     const slides = React.useMemo(
-        () => props.appData.solution.slider,
-        [props.appData.solution.slider]
+        () => appData.solution.slider,
+        [appData.solution.slider]
     );
     const [currentSlide, setCurrentSlide] = React.useState(0);
     const slidesLength = React.useMemo(() => slides.length, [slides]);
@@ -25,7 +26,7 @@ function ImageCarousel(props) {
     }
 
     return Array.isArray(slides) || slides.length <= 0 ? (
-        <div className='image-carousel'>
+        <div ref={ref} className='image-carousel'>
             <div
                 className='image-carousel__button'
                 onClick={prevSlide}
@@ -86,6 +87,6 @@ function ImageCarousel(props) {
     ) : (
         <div>death</div>
     );
-}
+});
 
-export default ImageCarousel;
+export const MImageCarousel = motion(ImageCarousel);
