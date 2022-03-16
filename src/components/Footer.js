@@ -1,26 +1,25 @@
 import React from 'react';
-import data from '../utils/data';
 
-function Footer() {
+function Footer({ appData }) {
     return (
         <section id='contacts' className='footer'>
             <div className='footer__top'>
                 <div className='footer-section'>
                     <p className='footer-section__title'>
-                        {data.footer.section1.title}
+                        {appData.footer.section1.title}
                     </p>
                     <p className='footer-section__item'>
-                        {data.footer.section1.email}
+                        {appData.footer.section1.email}
                     </p>
                     <p className='footer-section__item'>
-                        {data.footer.section1.address}
+                        {appData.footer.section1.address}
                     </p>
                 </div>
                 <div className='footer-section'>
                     <p className='footer-section__title'>
-                        {data.footer.section2.title}
+                        {appData.footer.section2.title}
                     </p>
-                    {data.footer.section2.socials.map((social) => (
+                    {appData.footer.section2.socials.map((social) => (
                         <div key={social.id} className='footer-section__item'>
                             <img
                                 className='footer-section__social-icon'
@@ -38,14 +37,14 @@ function Footer() {
                 </div>
                 <div className='footer-section footer-section_type_place'>
                     <p className='footer-section__title'>
-                        {data.footer.section3.title}
+                        {appData.footer.section3.title}
                     </p>
 
                     <p className='footer-section__item'>
-                        {data.footer.section3.currentPlaces.title}
+                        {appData.footer.section3.currentPlaces.title}
                     </p>
                     <div className='footer-section__place-container'>
-                        {data.footer.section3.currentPlaces.places.map(
+                        {appData.footer.section3.currentPlaces.places.map(
                             (currentPlace, index) => (
                                 <p
                                     key={`currentPlace${index}`}
@@ -57,10 +56,10 @@ function Footer() {
                         )}
                     </div>
                     <p className='footer-section__item'>
-                        {data.footer.section3.planedPlaces.title}
+                        {appData.footer.section3.planedPlaces.title}
                     </p>
                     <div className='footer-section__place-container'>
-                        {data.footer.section3.planedPlaces.places.map(
+                        {appData.footer.section3.planedPlaces.places.map(
                             (planedPlace, index) => (
                                 <p
                                     key={`planedPlace${index}`}
