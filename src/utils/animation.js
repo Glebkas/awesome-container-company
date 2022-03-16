@@ -70,6 +70,61 @@ const problemImageAnimation = {
     }),
 };
 
+const solutionTextAnimation = {
+    hidden: {
+        scale: 0,
+        opacity: 0,
+    },
+    visible: (custom) => ({
+        scale: 1,
+        opacity: 1,
+        transition: { delay: custom * 0.2 },
+    }),
+};
+
+const solutionCaruselAnimation = {
+    hidden: {
+        y: 100,
+        rotate: 20,
+        opacity: 0,
+    },
+    visible: (custom) => ({
+        y: 0,
+        opacity: 1,
+        rotate: 0,
+        transition: { duration: 1, delay: custom * 0.2 },
+    }),
+};
+
+const solutionIconAnimation = {
+    hidden: {
+        y: 100,
+        rotate: 20,
+        opacity: 0,
+        scale: 1.2,
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        rotate: 0,
+        scale: 1,
+        transition: { duration: 0.6 },
+    },
+};
+
+const pointsBoxAnimation = {
+    hidden: {
+        scale: 0,
+        opacity: 0,
+    },
+    visible: (custom) => ({
+        scale: 1,
+        opacity: 1,
+        transition: { duration: 0.6, delay: custom * 0.2 },
+        
+    }),
+};
+
 export {
     heroTextAnimation,
     imageComparisonAnimation,
@@ -77,4 +132,8 @@ export {
     problemTextAnimation,
     problemImageAnimation,
     problemGraphAnimation,
+    solutionCaruselAnimation,
+    solutionTextAnimation,
+    solutionIconAnimation,
+    pointsBoxAnimation,
 };
