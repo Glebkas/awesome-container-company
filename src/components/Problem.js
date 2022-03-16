@@ -23,6 +23,7 @@ function Problem(props) {
                         variants={problemTextAnimation}
                         custom={1}
                         className='problem__stats-info-title'
+                        
                     >
                         Single-use packaging: <br />
                         bad for the planet, bad for business
@@ -58,6 +59,7 @@ function Problem(props) {
                         custom={index + 1}
                         key={index}
                         className='problem__image-container'
+                        whileHover={{ scale: 1.1 }}
                     >
                         <img
                             src={image.src}
