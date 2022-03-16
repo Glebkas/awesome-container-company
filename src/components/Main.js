@@ -16,7 +16,7 @@ function Main(props) {
             <Solution appData={props.appData} />
             <WorkPlan />
             <Impact appData={props.appData} />
-            <Pricing openPopUp={props.openPopUp} />
+            <Pricing appData={props.appData} openPopUp={props.openPopUp} />
             <Team appData={props.appData} />
             <Partners appData={props.appData} />
         </>
