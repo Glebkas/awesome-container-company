@@ -1,9 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+import { contactFormAnimation } from '../utils/animation';
 
 function Contactform(props) {
     return (
         <div className='contact-form'>
-            <div className='contact-form__container'>
+            <motion.div
+                closed='hidden'
+                open='visible'
+                variants={contactFormAnimation}
+                className='contact-form__container'
+                exit={{ opacity: 0 }}
+            >
                 <div
                     onClick={props.closePopup}
                     type='button'
@@ -61,7 +70,7 @@ function Contactform(props) {
                         Save
                     </button>
                 </form>
-            </div>
+            </motion.div>
         </div>
     );
 }
