@@ -121,7 +121,18 @@ const pointsBoxAnimation = {
         scale: 1,
         opacity: 1,
         transition: { duration: 0.6, delay: custom * 0.2 },
-        
+    }),
+};
+
+const contactFormAnimation = {
+    hidden: {
+        scale: 0,
+        opacity: 0,
+    },
+    visible: (custom) => ({
+        scale: 1,
+        opacity: 1,
+        transition: { duration: 0.6, delay: custom * 0.2 },
     }),
 };
 
@@ -136,4 +147,5 @@ export {
     solutionTextAnimation,
     solutionIconAnimation,
     pointsBoxAnimation,
+    contactFormAnimation,
 };
