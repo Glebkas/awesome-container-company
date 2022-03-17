@@ -47,7 +47,6 @@ function Solution({ appData }) {
                     initial='hidden'
                     whileInView='visible'
                     variants={solutionIconAnimation}
-                    whileHover={{ scale: 1.1 }}
                     className='solution__icon-container'
                 >
                     <div className='solution__icon-inner-container'>
@@ -68,7 +67,6 @@ function Solution({ appData }) {
                     initial='hidden'
                     whileInView='visible'
                     variants={solutionIconAnimation}
-                    whileHover={{ scale: 1.1 }}
                     className='solution__icon-container solution__icon-container_type_center'
                 >
                     <div className='solution__icon-inner-container'>
@@ -87,7 +85,6 @@ function Solution({ appData }) {
                     initial='hidden'
                     whileInView='visible'
                     variants={solutionIconAnimation}
-                    whileHover={{ scale: 1.1 }}
                     className='solution__icon-container solution__icon-container_type_bottom'
                 >
                     <div className='solution__icon-inner-container'>
