@@ -2,3 +2,9 @@
     padding: 0 40px 0 40px;
     margin: 74px auto 120px auto;
 }
+
+@media screen and (max-width: 1060px) {
+    .hero {
+        padding: 0 20px 0 20px;
+    }
+}
