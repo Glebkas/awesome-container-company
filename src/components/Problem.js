@@ -1,5 +1,5 @@
 import React from 'react';
-import { MInfoGraphic } from './InfoGraphic';
+
 import { motion } from 'framer-motion';
 
 import {
@@ -17,13 +17,16 @@ function Problem(props) {
                 whileInView='visible'
                 className='problem__stats'
             >
-                <MInfoGraphic variants={problemGraphAnimation} custom={4} />
+               
+                <img className='problem__infographic'
+                    src={props.appData.problem.infographicsImage}
+                    alt='only 9% of the total waste gets recycled'
+                ></img>
                 <div className='problem__stats-info'>
                     <motion.h2
                         variants={problemTextAnimation}
                         custom={1}
                         className='problem__stats-info-title'
-                        
                     >
                         Single-use packaging: <br />
                         bad for the planet, bad for business
@@ -47,19 +50,18 @@ function Problem(props) {
                     </motion.p>
                 </div>
             </motion.div>
-            <motion.div
+            <motion.ul
                 viewport={{ amount: 0.23, once: true }}
                 initial='hidden'
                 whileInView='visible'
                 className='problem__image-grid'
             >
                 {props.appData.problem.images.map((image, index) => (
-                    <motion.div
+                    <motion.li
                         variants={problemImageAnimation}
                         custom={index + 1}
                         key={index}
                         className='problem__image-container'
-                        whileHover={{ scale: 1.1 }}
                     >
                         <img
                             src={image.src}
@@ -69,9 +71,9 @@ function Problem(props) {
                         <figcaption className='problem__image-caption'>
                             {image.imagecaption}
                         </figcaption>
-                    </motion.div>
+                    </motion.li>
                 ))}
-            </motion.div>
+            </motion.ul>
         </section>
     );
 }

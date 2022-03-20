@@ -3,6 +3,7 @@
     width: 100%;
     justify-content: end;
     min-width: 725px;
+    align-items: center;
 }
 
 @media screen and (max-width: 1060px) {

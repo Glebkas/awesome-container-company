@@ -4,6 +4,8 @@
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__left-container/header__left-container.css);
 @import url(./blocks/header/__right-container/header__right-container.css);
+@import url(./blocks/header/__hamburger/header__hamburger.css);
+@import url(./blocks/header/__hamburger/_close/header__hamburger_close.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__title/header__title.css);
 
@@ -27,9 +29,18 @@
 @import url(./blocks/image-comparison/__caption/image-comparison__caption.css);
 
 @import url(./blocks/chat/chat.css);
+@import url(./blocks/chat/__avatar/chat__avatar.css);
+@import url(./blocks/chat/__avatar/_type/chat__avatar_type_admin.css);
+@import url(./blocks/chat/__msg-container/chat__msg-container.css);
+@import url(./blocks/chat/__msg-container/_type/chat__msg-container_type_admin.css);
+@import url(./blocks/chat/__msg-container/_type/chat__msg-container_type_button.css);
+@import url(./blocks/chat/__msg/chat__msg.css);
+@import url(./blocks/chat/__msg/_type/chat__msg_type_admin.css);
+@import url(./blocks/chat/__msg/_type/chat__msg_type_button.css);
 
 @import url(./blocks/problem/problem.css);
 @import url(./blocks/problem/__stats/problem__stats.css);
+@import url(./blocks/problem/__infographic/problem__infographic.css);
 @import url(./blocks/problem/__stats-info/problem__stats-info.css);
 @import url(./blocks/problem/__stats-info-title/problem__stats-info-title.css);
 @import url(./blocks/problem/__stats-info-description/problem__stats-info-description.css);
@@ -38,15 +49,6 @@
 @import url(./blocks/problem/__image-container/problem__image-container.css);
 @import url(./blocks/problem/__image/problem__image.css);
 @import url(./blocks/problem/__image-caption/problem__image-caption.css);
-
-@import url(./blocks/infographic/infographic.css);
-@import url(./blocks/infographic/__title/infographic__title.css);
-@import url(./blocks/infographic/__graph-wrap/infographic__graph-wrap.css);
-@import url(./blocks/infographic/__graph-circle/infographic__graph-circle.css);
-@import url(./blocks/infographic/__graph-fill/infographic__graph-fill.css);
-@import url(./blocks/infographic/__graph-inside-circle/infographic__graph-inside-circle.css);
-@import url(./blocks/infographic/__graph-description/infographic__graph-description.css);
-@import url(./blocks/infographic/__graph-description/_type/infographic__graph-description_type_bottom.css);
 
 @import url(./blocks/solution/solution.css);
 @import url(./blocks/solution/__title/solution__title.css);

@@ -16,7 +16,7 @@ export const ImageComparison = React.forwardRef((props, ref) => {
                 boundsPadding={0}
                 handle={
                     <div className='image-comparison__slider-line'>
-                        <button className='image-comparison__slider-handle'>{`< >`}</button>
+                        <button className='image-comparison__slider-handle'/>
                     </div>
                 }
                 itemOne={

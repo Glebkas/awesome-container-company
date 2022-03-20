@@ -34,6 +34,36 @@ const chatAnimation = {
     }),
 };
 
+const chatMsgAnimationUser = {
+    hidden: {
+        x: 100,
+        opacity: 0,
+        display:'none',
+
+    },
+    visible: (custom) => ({
+        x: 0,
+        opacity: 1,
+        transition: { delay: custom * 1.1 },
+        display:'block',
+
+    }),
+};
+
+const chatMsgAnimationAdmin = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+        display:'none',
+    },
+    visible: (custom) => ({
+        x: 0,
+        opacity: 1,
+        transition: { delay: custom * 1.1 },
+        display:'block',
+    }),
+};
+
 const problemTextAnimation = {
     hidden: {
         y: 100,
@@ -140,6 +170,8 @@ export {
     heroTextAnimation,
     imageComparisonAnimation,
     chatAnimation,
+    chatMsgAnimationUser,
+    chatMsgAnimationAdmin,
     problemTextAnimation,
     problemImageAnimation,
     problemGraphAnimation,

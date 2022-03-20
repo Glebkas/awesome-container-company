@@ -5,3 +5,11 @@
     font-weight: 400;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .problem__stats-info-title {
+        font-size: 38px;
+        line-height: 45px;
+        text-align: center;
+    }
+}

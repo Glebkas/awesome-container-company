@@ -11,7 +11,7 @@ import Partners from './Partners';
 function Main(props) {
     return (
         <>
-            <Hero />
+            <Hero openPopUp={props.openPopUp} />
             <Problem appData={props.appData} />
             <Solution appData={props.appData} />
             <WorkPlan />

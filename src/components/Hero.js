@@ -8,7 +8,7 @@ import {
 } from '../utils/animation';
 import { MImageComparison } from './ImageComparison';
 
-function Hero() {
+function Hero(props) {
     return (
         <motion.section
             viewport={{ once: true }}
@@ -37,7 +37,7 @@ function Hero() {
                     variants={imageComparisonAnimation}
                     custom={3}
                 />
-                <MChat variants={chatAnimation} custom={3}></MChat>
+                <MChat openPopUp={props.openPopUp} variants={chatAnimation} custom={3}></MChat>
             </div>
         </motion.section>
     );

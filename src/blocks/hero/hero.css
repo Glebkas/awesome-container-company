@@ -3,8 +3,10 @@
     margin: 74px auto 120px auto;
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1154px) {
     .hero {
         padding: 0 20px 0 20px;
     }
 }
+
+
