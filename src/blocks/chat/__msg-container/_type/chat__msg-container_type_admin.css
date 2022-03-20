@@ -1,0 +1,7 @@
+.chat__msg-container_type_admin {
+    margin-left: unset;
+    margin-right: 50px;
+    align-self: flex-end;
+    border-radius: 10px 10px 0px 10px;
+    background-color: #1c383c;
+}

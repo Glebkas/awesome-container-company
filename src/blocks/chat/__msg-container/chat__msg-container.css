@@ -1,0 +1,10 @@
+.chat__msg-container {
+    margin-left: 50px;
+    max-width: 255px;
+    margin-bottom: 16px;
+    background-color: rgba(227, 227, 227, 1);
+    border-radius: 0px 10px 10px 10px;
+    padding: 10px 12px 10px 12px;
+    line-height: 17px;
+    inline-size: fit-content;
+}

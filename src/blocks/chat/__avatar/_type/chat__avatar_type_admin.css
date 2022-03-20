@@ -1,0 +1,5 @@
+.chat__avatar_type_admin {
+    background-image: url(../../../../../public/images/chat-awesome.svg);
+    align-self: flex-end;
+    margin-top: -15px;
+}

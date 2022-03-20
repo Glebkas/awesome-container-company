@@ -1,5 +1,15 @@
 .chat {
-    background-color: rgb(211, 211, 211);
-    width: 491px;
+    max-width: 491px;
     height: 389px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 60px;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 960px) {
+    .chat {
+        margin-top: 70px;
+    }
 }
