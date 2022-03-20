@@ -11,6 +11,7 @@ const data = {
         title: 'Single-use packaging: bad for the planet, bad for business',
         description:
             'Millions of tons of single-use packaging end up in landfills and oceans while only 9% of single-use waste gets recycled. Meanwhile, single-use containers are expensive and restaurants need to track inventory / restock weekly.',
+        infographicsImage: '../images/infographic.png',
         images: [
             {
                 src: '../images/ocean-polution.png',
