@@ -12,32 +12,39 @@ function PointsBox(props) {
             variants={pointsBoxAnimation}
             custom={1}
         >
-            <motion.p
-                variants={pointsBoxAnimation}
-                className='points-box__title'
-                custom={1}
-            >
-                {props.title}
-            </motion.p>
-            <ul className='points-box__list'>
-                {props.points.map((point, index) => (
-                    <>
-                        <motion.div
-                            variants={pointsBoxAnimation}
-                            custom={index + 1}
-                            className='points-box__point'
-                        />
-                        <motion.li
-                            variants={pointsBoxAnimation}
-                            custom={index + 1}
-                            key={index}
-                            className='points-box__list-item'
-                        >
-                            {point}
-                        </motion.li>
-                    </>
-                ))}
-            </ul>
+            <img
+                className='points-box__background-image'
+                src={props.backgroundImage} alt="background decoration"
+            />
+            <div className='points-box_container'>
+                <motion.p
+                    variants={pointsBoxAnimation}
+                    className='points-box__title'
+                    custom={1}
+                >
+                    {props.title}
+                </motion.p>
+                <ul className='points-box__list'>
+                    {props.points.map((point, index) => (
+                        <React.Fragment key={`points${index}`}>
+                            <motion.div
+                                variants={pointsBoxAnimation}
+                                custom={index + 3}
+                                key={Math.random}
+                                className='points-box__point'
+                            />
+                            <motion.li
+                                variants={pointsBoxAnimation}
+                                custom={index + 3}
+                                key={Math.random + 1}
+                                className='points-box__list-item'
+                            >
+                                {point}
+                            </motion.li>
+                        </React.Fragment>
+                    ))}
+                </ul>
+            </div>
         </motion.div>
     );
 }
