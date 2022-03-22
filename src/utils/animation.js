@@ -38,15 +38,13 @@ const chatMsgAnimationUser = {
     hidden: {
         x: 100,
         opacity: 0,
-        display:'none',
-
+        display: 'none',
     },
     visible: (custom) => ({
         x: 0,
         opacity: 1,
         transition: { delay: custom * 1.1 },
-        display:'block',
-
+        display: 'block',
     }),
 };
 
@@ -54,13 +52,13 @@ const chatMsgAnimationAdmin = {
     hidden: {
         x: -100,
         opacity: 0,
-        display:'none',
+        display: 'none',
     },
     visible: (custom) => ({
         x: 0,
         opacity: 1,
         transition: { delay: custom * 1.1 },
-        display:'block',
+        display: 'block',
     }),
 };
 
@@ -100,7 +98,7 @@ const problemImageAnimation = {
     }),
 };
 
-const solutionTextAnimation = {
+const textAnimation = {
     hidden: {
         scale: 0,
         opacity: 0,
@@ -166,6 +164,35 @@ const contactFormAnimation = {
     }),
 };
 
+const teamAnimation = {
+    hidden: {
+        y: 100,
+        scale: 0,
+        opacity: 0,
+    },
+    visible: (custom) => ({
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: { delay: custom * 0.3 },
+    }),
+};
+
+const partnerAnimation = {
+    hidden: {
+        y: 100,
+        scale: 1.5,
+        opacity: 0,
+    },
+    visible: (custom) => ({
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: { delay: custom * 0.2, duration: 0.4 },
+       
+    }),
+};
+
 export {
     heroTextAnimation,
     imageComparisonAnimation,
@@ -176,8 +203,10 @@ export {
     problemImageAnimation,
     problemGraphAnimation,
     solutionCaruselAnimation,
-    solutionTextAnimation,
+    textAnimation,
     solutionIconAnimation,
     pointsBoxAnimation,
     contactFormAnimation,
+    teamAnimation,
+    partnerAnimation
 };
