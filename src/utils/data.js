@@ -114,6 +114,7 @@ const data = {
         pointsBoxs: [
             {
                 id: 'pointbox1',
+                backgroundImage: '../images/impact1.svg',
                 title: 'For Businesses',
                 points: [
                     'Save at least 50% on supply cost',
@@ -124,6 +125,7 @@ const data = {
             },
             {
                 id: 'pointbox2',
+                backgroundImage: '../images/impact2.svg',
                 title: 'For Users',
                 points: [
                     'Remove all chemicals going into food: plastics, BPA, PFAS and other ‘forever chemicals’ used to hold compostable packaging together',
