@@ -22,7 +22,7 @@ function Hero(props) {
                 className='hero__title'
             >
                 Help our environment by eliminating single-use plastics from
-                your delivery with<br/>
+                your delivery with&nbsp; 
                 <motion.span
                     custom={3}
                     variants={heroTextAnimation}
@@ -37,7 +37,11 @@ function Hero(props) {
                     variants={imageComparisonAnimation}
                     custom={3}
                 />
-                <MChat openPopUp={props.openPopUp} variants={chatAnimation} custom={3}></MChat>
+                <MChat
+                    openPopUp={props.openPopUp}
+                    variants={chatAnimation}
+                    custom={3}
+                ></MChat>
             </div>
         </motion.section>
     );
