@@ -18,10 +18,11 @@ function Problem(props) {
                 className='problem__stats'
             >
                
-                <img className='problem__infographic'
+                <motion.img className='problem__infographic'
+                variants={problemGraphAnimation}
                     src={props.appData.problem.infographicsImage}
                     alt='only 9% of the total waste gets recycled'
-                ></img>
+                ></motion.img>
                 <div className='problem__stats-info'>
                     <motion.h2
                         variants={problemTextAnimation}
