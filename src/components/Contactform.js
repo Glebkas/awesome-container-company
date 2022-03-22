@@ -28,14 +28,14 @@ export const Contactform = React.forwardRef((props, ref) => {
                 ></div>
                 {!formSent && (
                     <div>
-                        <p class='contact-form__title'>
+                        <p className='contact-form__title'>
                             Leave your contacts and request, and our manager
                             will reach out to you to establish our futher
                             parntership!
                         </p>
                         <form
                             onSubmit={handleSubmit(onSubmit)}
-                            novalidate
+                            noValidate
                             className='form'
                             name='contact-form'
                         >
