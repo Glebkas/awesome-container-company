@@ -1,0 +1,17 @@
+.points-box__background-image {
+    position: absolute;
+    top: calc(-122px + 10%);
+    z-index: 0;
+    max-width: 243px;
+    width: 50%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 756px) {
+    .points-box__background-image {
+        top: calc(-115px + 11%);
+    }
+}
+
+

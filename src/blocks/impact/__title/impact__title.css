@@ -5,3 +5,9 @@
     margin: 0;
     color: #1c383c;
 }
+@media screen and (max-width: 667px) {
+    .impact__title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}

@@ -1,8 +1,15 @@
 .solution__title {
-    margin: 0;
+    margin: 0 auto;
     font-size: 44px;
     line-height: 52px;
     color: #1c383c;
     text-align: center;
     max-width: 480px;
+}
+
+@media screen and (max-width: 768px) {
+    .solution__title {
+        font-size: 28px;
+        line-height: 32px;
+    }
 }

@@ -6,3 +6,12 @@
     color: #1c383c;
     margin: 0 0 100px 0;
 }
+
+
+
+@media screen and (max-width: 667px) {
+    .partners__title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}

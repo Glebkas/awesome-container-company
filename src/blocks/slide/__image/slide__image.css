@@ -1,4 +1,28 @@
 .slide__image {
     max-width: 520px;
     max-height: 520px;
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+}
+
+@media screen and (max-width: 1440px) {
+    .slide__image {
+        max-width: 420px;
+        max-height: 420px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slide__image {
+        width: 100%;
+        min-width: 431px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide__image {
+        margin: auto;
+        min-width: unset;
+    }
 }

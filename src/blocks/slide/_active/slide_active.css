@@ -5,3 +5,16 @@
     height: 100%;
     margin: 0 50px 0 50px;
 }
+
+@media screen and (max-width: 1440px) {
+    .slide_active {
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide_active {
+        margin: 0;
+        padding-bottom: 60px;
+    }
+}

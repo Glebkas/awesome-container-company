@@ -3,10 +3,16 @@
     max-width: 24px;
     width: 100%;
     border-radius: 50%;
-    background: #1c383c;
+    background-image: url(../../../../public/images/back.svg);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .image-carousel__button {
+        position: absolute;
+        left: 0;
+        bottom: -48px;
+    }
 }

@@ -1,2 +1,10 @@
 .image-carousel__button_type_right {
+    background-image: url(../../../../../public/images/forward.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .image-carousel__button_type_right {
+        right: 0;
+        left: unset;
+    }
 }

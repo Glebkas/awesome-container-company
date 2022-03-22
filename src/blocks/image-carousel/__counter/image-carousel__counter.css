@@ -1,0 +1,13 @@
+.image-carousel__counter {
+    position: absolute;
+    display: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-carousel__counter {
+        display: block;
+        bottom: -50px;
+    }
+}

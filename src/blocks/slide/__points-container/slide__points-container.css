@@ -1,3 +1,10 @@
 .slide__points-container {
     margin-left: 79px;
 }
+
+
+@media screen and (max-width: 1100px) {
+    .slide__points-container{
+        margin-left: 25px;
+    }
+}

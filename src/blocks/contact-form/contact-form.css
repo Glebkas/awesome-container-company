@@ -10,3 +10,9 @@
     display: flex;
     z-index: 4000;
 }
+
+.body.contact-form {
+    height: 100vh;
+    overflow-y: hidden;
+    padding-right: 15px;
+}

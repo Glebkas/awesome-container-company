@@ -7,3 +7,10 @@
     max-width: 600px;
     width: 100%;
 }
+
+@media screen and (max-width: 1154px) {
+    .contact-form__container {
+        max-height: 88vh;
+        overflow: auto;
+    }
+}

@@ -1,9 +1,25 @@
 .slide {
     display: flex;
     max-width: 1212px;
-    max-height: 600px;
+    max-height: 891px;
+    min-height: 600px;
     background-color: white;
     opacity: 0;
     transition: 1s;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .slide {
+        max-height: fit-content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: unset;
+    }
 }

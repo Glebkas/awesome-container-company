@@ -5,3 +5,9 @@
     margin: 40px 0 16px 0;
     color: #1c383c;
 }
+
+@media screen and (max-width: 768px) {
+    .slide__points-title {
+        margin: 24px 0 16px 0;
+    }
+}

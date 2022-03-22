@@ -66,6 +66,7 @@
 @import url(./blocks/image-carousel/__container/image-carousel__container.css);
 @import url(./blocks/image-carousel/__button/image-carousel__button.css);
 @import url(./blocks/image-carousel/__button/_type/image-carousel__button_type_right.css);
+@import url(./blocks/image-carousel/__counter/image-carousel__counter.css);
 
 @import url(./blocks/slide/slide.css);
 @import url(./blocks/slide/_active/slide_active.css);
@@ -80,10 +81,12 @@
 @import url(./blocks/impact/__points-container/impact__points-container.css);
 
 @import url(./blocks/points-box/points-box.css);
+@import url(./blocks/points-box/__container/points-box_container.css);
 @import url(./blocks/points-box/__title/points-box__title.css);
 @import url(./blocks/points-box/__list/points-box__list.css);
 @import url(./blocks/points-box/__point/points-box__point.css);
 @import url(./blocks/points-box/__list-item/points-box__list-item.css);
+@import url(./blocks/points-box/__background-image/points-box__background-image.css);
 
 @import url(./blocks/pricing/pricing.css);
 @import url(./blocks/pricing/__top/pricing__top.css);
