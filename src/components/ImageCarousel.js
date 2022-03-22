@@ -27,10 +27,7 @@ export const ImageCarousel = React.forwardRef(({ appData }, ref) => {
 
     return Array.isArray(slides) || slides.length <= 0 ? (
         <div ref={ref} className='image-carousel'>
-            <div
-                className='image-carousel__button'
-                onClick={prevSlide}
-            >{`<`}</div>
+            <div className='image-carousel__button' onClick={prevSlide} />
             {slides.map((slide, index) => (
                 <div
                     className={
@@ -82,11 +79,14 @@ export const ImageCarousel = React.forwardRef(({ appData }, ref) => {
             <div
                 className='image-carousel__button image-carousel__button_type_right'
                 onClick={nextSlide}
-            >{`>`}</div>
+            />
+            <div className='image-carousel__counter'>{`${currentSlide+1}/${slides.length}`}</div>
         </div>
     ) : (
-        <div>death</div>
+        <div></div>
     );
-});
+    
+}
+);
 
 export const MImageCarousel = motion(ImageCarousel);
