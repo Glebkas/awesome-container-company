@@ -8,5 +8,14 @@
     .problem__stats {
         flex-direction: column-reverse;
         align-items: center;
+        margin: 80px auto 80px auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .problem__stats {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 40px auto 80px auto;
     }
 }

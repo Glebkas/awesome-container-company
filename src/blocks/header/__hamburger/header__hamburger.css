@@ -16,3 +16,11 @@
         background-repeat: no-repeat;
     }
 }
+
+
+@media screen and (max-width: 580px) {
+    .header__hamburger {
+        margin-right: unset;
+
+    }
+}

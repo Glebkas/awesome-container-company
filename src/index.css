@@ -136,5 +136,9 @@
 
 @import url(./blocks/form/form.css);
 @import url(./blocks/form/__label/form__label.css);
+@import url(./blocks/form/__label/_error/form__label_error.css);
 @import url(./blocks/form/__input/form__input.css);
+@import url(./blocks/form/__input/_error/form__input_error.css);
 @import url(./blocks/form/__submit/form__submit.css);
+@import url(./blocks/form/__submit/_disabled/form__submit_disabled.css);
+@import url(./blocks/form/__msg-sent/form__msg-sent.css);

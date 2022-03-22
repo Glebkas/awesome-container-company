@@ -5,8 +5,17 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 6px;
+    background-size: contain;
+ 
 }
 
 .header__logo:hover {
     background-image: url(../../../../public/images/logo-hover.svg);
+}
+
+@media screen and (max-width: 580px) {
+    .header__logo {
+        width: 60px;
+        height: 33.44px;
+    }
 }

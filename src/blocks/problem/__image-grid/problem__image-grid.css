@@ -1,7 +1,7 @@
 .problem__image-grid {
     display: grid;
-    grid-template-columns: minmax(215px, 345px) minmax(215px, 345px) minmax(
-            215px,
+    grid-template-columns: minmax(229px, 345px) minmax(229px, 345px) minmax(
+            229px,
             345px
         );
     justify-content: center;
@@ -13,12 +13,14 @@
 
 @media screen and (max-width: 1250px) {
     .problem__image-grid {
-        gap: 20px;
+        gap: 0 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .problem__image-grid {
-        margin: 0 0 80px 0;
+        grid-template-columns: minmax(229px, 345px);
+        gap: 0 20px;
+
     }
 }
