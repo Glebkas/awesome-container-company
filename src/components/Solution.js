@@ -3,7 +3,7 @@ import { MImageCarousel } from './ImageCarousel';
 import { motion } from 'framer-motion';
 import {
     solutionCaruselAnimation,
-    solutionTextAnimation,
+    textAnimation,
     solutionIconAnimation,
 } from '../utils/animation';
 
@@ -16,14 +16,14 @@ function Solution({ appData }) {
                 whileInView='visible'
             >
                 <motion.h2
-                    variants={solutionTextAnimation}
+                    variants={textAnimation}
                     custom={1}
                     className='solution__title'
                 >
                     {appData.solution.title}
                 </motion.h2>
                 <motion.p
-                    variants={solutionTextAnimation}
+                    variants={textAnimation}
                     custom={2}
                     className='solution__subtitle'
                 >
@@ -34,7 +34,7 @@ function Solution({ appData }) {
                 </motion.p>
             </motion.span>
             <MImageCarousel
-                viewport={{ amount: 0.5, once: true }}
+                viewport={{ amount: 0.2, once: true }}
                 initial='hidden'
                 whileInView='visible'
                 variants={solutionCaruselAnimation}
