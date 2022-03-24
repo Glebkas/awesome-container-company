@@ -15,7 +15,7 @@ function Main(props) {
             <Hero openPopUp={props.openPopUp} />
             <Problem appData={props.appData} />
             <Solution appData={props.appData} />
-            <WorkPlan appData={props.appData} />
+            <WorkPlan appData={props.appData} openPopUp={props.openPopUp} />
             <Impact appData={props.appData} />
             <Competition appData={props.appData}/>
             <Pricing appData={props.appData} openPopUp={props.openPopUp} />
