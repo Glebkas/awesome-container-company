@@ -17,12 +17,23 @@ function Pricing(props) {
                     className='pricing__top-image'
                     src={props.appData.pricing.image}
                     alt='container ilustration'
-                ></img>
+                />
             </div>
             <div className='pricing__bottom'>
                 <h3 className='pricing__bottom-title'>
                     {props.appData.pricing.title2}
                 </h3>
+                <div className='pricing__bottom-ilustration-container'>
+                    <img src={props.appData.pricing.image2}
+                        alt='container ilustration'
+                        className='pricing__bottom-ilustration-image'
+                    />
+                    <div className='pricing__bottom-ilustration-bubble'>
+                        <p className='pricing__bottom-ilustration-callout'>
+                            {props.appData.pricing.bubble}
+                        </p>
+                    </div>
+                </div>
             </div>
             <ContactButton openPopUp={props.openPopUp} class='contact-button' />
             <p className='pricing__contact-subtitle'>
