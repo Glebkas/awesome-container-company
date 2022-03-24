@@ -109,6 +109,37 @@ const data = {
             },
         },
     },
+
+    workPlan: {
+        title: 'How it Works?',
+        steps: [
+            {
+                number: '01.',
+                image: '../images/workplan1.png',
+                caption: 'Restaurants request reusable containers via app',
+                classType:'first'
+            },
+            {
+                number: '02.',
+                image: '../images/workplan2.png',
+                caption: 'Deliver containers to restaurants',
+                classType:'second'
+            },
+            {
+                number: '03.',
+                image: '../images/workplan3.png',
+                caption: ' Pick up used containers from users via app',
+                classType:'third'
+            },
+            {
+                number: '04.',
+                image: '../images/workplan4.png',
+                caption: 'Wash containers at commercial facility',
+                classType:'fourth'
+            },
+        ],
+    },
+
     impact: {
         title: 'Impact',
         pointsBoxs: [
