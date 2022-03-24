@@ -206,6 +206,20 @@ const workPlanAnimation = {
     }),
 };
 
+const tableAnimation = {
+    hidden: {
+        y: -100,
+        scale: 0,
+        opacity: 0,
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 0.6 },
+    },
+};
+
 export {
     heroTextAnimation,
     imageComparisonAnimation,
@@ -223,4 +237,5 @@ export {
     teamAnimation,
     partnerAnimation,
     workPlanAnimation,
+    tableAnimation,
 };
