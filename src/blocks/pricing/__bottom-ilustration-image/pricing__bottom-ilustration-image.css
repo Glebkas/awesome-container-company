@@ -1,0 +1,13 @@
+.pricing__bottom-ilustration-image {
+    width: 195px;
+    display: flex;
+    align-self: self-end;
+}
+
+@media screen and (max-width: 768px) {
+    .pricing__bottom-ilustration-image {
+        width: 135px;
+        align-self: unset;
+
+    }
+}

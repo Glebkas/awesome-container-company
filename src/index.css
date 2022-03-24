@@ -110,7 +110,6 @@
 @import url(./blocks/table/__cell-point/table__cell-point.css);
 @import url(./blocks/table/__cell-point/_type/table__cell-point_type_orange.css);
 
-
 @import url(./blocks/points-box/points-box.css);
 @import url(./blocks/points-box/__container/points-box_container.css);
 @import url(./blocks/points-box/__title/points-box__title.css);
@@ -126,6 +125,10 @@
 @import url(./blocks/pricing/__top-description/pricing__top-description.css);
 @import url(./blocks/pricing/__top-image/pricing__top-image.css);
 @import url(./blocks/pricing/__bottom/pricing__bottom.css);
+@import url(./blocks/pricing/__bottom-ilustration-container/pricing__bottom-ilustration-container.css);
+@import url(./blocks/pricing/__bottom-ilustration-image/pricing__bottom-ilustration-image.css);
+@import url(./blocks/pricing/__bottom-ilustration-bubble/pricing__bottom-ilustration-bubble.css);
+@import url(./blocks/pricing/__bottom-ilustration-callout/pricing__bottom-ilustration-callout.css);
 @import url(./blocks/pricing/__bottom-title/pricing__bottom-title.css);
 @import url(./blocks/pricing/__price-boxes-container/pricing__price-boxes-container.css);
 @import url(./blocks/pricing/__contact-subtitle/pricing__contact-subtitle.css);
@@ -158,6 +161,7 @@
 @import url(./blocks/footer-section/__title/footer-section__title.css);
 @import url(./blocks/footer-section/__container/footer-section__place-container.css);
 @import url(./blocks/footer-section/__item/footer-section__item.css);
+@import url(./blocks/footer-section/__item/_type/footer-section__item_type_location.css);
 @import url(./blocks/footer-section/_type/footer-section_type_place.css);
 @import url(./blocks/footer-section/__item/_type/footer-section__item_type_place.css);
 @import url(./blocks/footer-section/__social-icon/footer-section__social-icon.css);

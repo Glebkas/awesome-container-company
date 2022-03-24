@@ -5,3 +5,14 @@
     align-content: flex-start;
     margin-top: 55px;
 }
+
+
+
+@media screen and (max-width: 520px) {
+    .solution__icon-container {
+        flex-wrap: unset;
+
+    }
+}
+
+

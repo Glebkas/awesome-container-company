@@ -1,0 +1,20 @@
+.pricing__bottom-ilustration-bubble {
+    background-image: url(../../../../public/images/pricing-baloon-big.svg);
+    width: 480px;
+    height: 146px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .pricing__bottom-ilustration-bubble {
+        background-image: url(../../../../public/images/pricing-baloon-small.svg);
+        width: 308px;
+        height: 192px;
+        align-self: end;
+    }
+}

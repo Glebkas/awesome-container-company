@@ -1,3 +1,9 @@
 .pricing__title-container {
     margin-top: 180px;
 }
+
+@media screen and (max-width: 768px) {
+    .pricing__title-container {
+        margin-top: 60px;
+    }
+}

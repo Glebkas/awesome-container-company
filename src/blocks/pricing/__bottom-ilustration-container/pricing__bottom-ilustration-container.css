@@ -1,0 +1,17 @@
+.pricing__bottom-ilustration-container {
+    max-width: 706px;
+    display: flex;
+    margin-bottom: 92px;
+    height: 170px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .pricing__bottom-ilustration-container {
+        max-width: 430px;
+
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+}

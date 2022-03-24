@@ -1,0 +1,17 @@
+.pricing__bottom-ilustration-callout {
+    max-width: 386px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #1c383c;
+}
+
+@media screen and (max-width: 768px) {
+    .pricing__bottom-ilustration-callout {
+        max-width: 244px;
+
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

@@ -1,5 +1,27 @@
 .footer__top {
-    display: flex;
+    display: grid;
+    grid-template-columns: 344px 208px 344px;
     justify-content: space-between;
     padding: 0 80px 0 80px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer__top {
+        grid-template-columns: 344px 208px;
+        gap: 80px 0;
+    }
+}
+
+@media screen and (max-width: 822px) {
+    .footer__top {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .footer__top {
+        padding: 16px;
+    }
 }

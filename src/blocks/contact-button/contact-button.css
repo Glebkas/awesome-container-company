@@ -10,6 +10,9 @@
     width: 100%;
     font-size: 24px;
     line-height: 28px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-button:hover {
