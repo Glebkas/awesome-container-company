@@ -1,11 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { textAnimation, tableAnimation } from '../utils/animation';
 
 function Competition(props) {
     return (
-        <section className='competition'>
-            <h2 className='competition__title'>The competition is no match</h2>
-            <div className='competition__table-container'>
+        <motion.section
+            viewport={{ amount: 0.25, once: true }}
+            initial='hidden'
+            whileInView='visible'
+            className='competition'
+        >
+            <motion.h2 variants={textAnimation} className='competition__title'>
+                The competition is no match
+            </motion.h2>
+            <motion.div
+                viewport={{ amount: 0.25, once: true }}
+                initial='hidden'
+                whileInView='visible'
+                variants={tableAnimation}
+                className='competition__table-container'
+            >
                 <table className='table'>
                     <thead className='table__header'>
                         <tr className='table__row'>
@@ -124,8 +138,8 @@ function Competition(props) {
                         </tr>
                     </tbody>
                 </table>
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     );
 }
 
