@@ -3,28 +3,28 @@ const data = {
         title: 'Help our environment by eliminating single-use plastics from your delivery with',
         companyname: 'Awesome Container Company',
         imageslider: {
-            image1: '../images/container1.jpg',
-            image2: '../images/waste.jpg',
+            image1: 'images/container1.jpg',
+            image2: 'images/waste.jpg',
         },
     },
     problem: {
         title: 'Single-use packaging: bad for the planet, bad for business',
         description:
             'Millions of tons of single-use packaging end up in landfills and oceans while only 9% of single-use waste gets recycled. Meanwhile, single-use containers are expensive and restaurants need to track inventory / restock weekly.',
-        infographicsImage: '../images/infographic.png',
+        infographicsImage: 'images/infographic.png',
         images: [
             {
-                src: '../images/ocean-polution.png',
+                src: 'images/ocean-polution.png',
                 imagecaption:
                     'Single-use plastics pollute oceans and kill marine species',
             },
             {
-                src: '../images/landfills.png',
+                src: 'images/landfills.png',
                 imagecaption:
                     'Single-use plastics pollute landfills and emit dangerous chemicals and greenshouse gases',
             },
             {
-                src: '../images/unrecyclable.png',
+                src: 'images/unrecyclable.png',
                 imagecaption:
                     'Not all of the single-use plastics are recyclable',
             },
@@ -38,7 +38,7 @@ const data = {
         slider: [
             {
                 id: 'slide1',
-                image: '../images/container1.jpg',
+                image: 'images/container1.jpg',
                 featurePoints: [
                     'Removable/adjustable divider',
                     'Leak-resistant lid keeps food fresh',
@@ -56,7 +56,7 @@ const data = {
             },
             {
                 id: 'slide2',
-                image: '../images/container2.jpg',
+                image: 'images/container2.jpg',
                 featurePoints: [
                     'Leak-resistant lid keeps food fresh',
                     'Easy to sanitize and dishwasher safe',
@@ -76,7 +76,7 @@ const data = {
             },
             {
                 id: 'slide3',
-                image: '../images/container3.jpg',
+                image: 'images/container3.jpg',
                 featurePoints: [
                     'Removable 2-section + 4-section divider',
                     'Leak-resistant lid keeps food fresh',
@@ -94,16 +94,16 @@ const data = {
 
         ilustrations: {
             logistics: {
-                image: '../images/logistics.svg',
+                image: 'images/logistics.svg',
                 caption: 'Backend logistics support',
             },
             costs: {
-                image: '../images/costs.svg',
+                image: 'images/costs.svg',
                 caption:
                     'Save at least 50% on supply cost and time on inventory tracking/re-orders',
             },
             space: {
-                image: '../images/space.svg',
+                image: 'images/space.svg',
                 caption:
                     'Save at least 50% on supply cost and time on inventory tracking/re-orders',
             },
@@ -115,25 +115,25 @@ const data = {
         steps: [
             {
                 number: '01.',
-                image: '../images/workplan1.png',
+                image: 'images/workplan1.png',
                 caption: 'Restaurants request reusable containers via app',
                 classType:'first'
             },
             {
                 number: '02.',
-                image: '../images/workplan2.png',
+                image: 'images/workplan2.png',
                 caption: 'Deliver containers to restaurants',
                 classType:'second'
             },
             {
                 number: '03.',
-                image: '../images/workplan3.png',
+                image: 'images/workplan3.png',
                 caption: ' Pick up used containers from users via app',
                 classType:'third'
             },
             {
                 number: '04.',
-                image: '../images/workplan4.png',
+                image: 'images/workplan4.png',
                 caption: 'Wash containers at commercial facility',
                 classType:'fourth'
             },
@@ -145,7 +145,7 @@ const data = {
         pointsBoxs: [
             {
                 id: 'pointbox1',
-                backgroundImage: '../images/impact1.svg',
+                backgroundImage: 'images/impact1.svg',
                 title: 'For Businesses',
                 points: [
                     'Save at least 50% on supply cost',
@@ -156,7 +156,7 @@ const data = {
             },
             {
                 id: 'pointbox2',
-                backgroundImage: '../images/impact2.svg',
+                backgroundImage: 'images/impact2.svg',
                 title: 'For Users',
                 points: [
                     'Remove all chemicals going into food: plastics, BPA, PFAS and other ‘forever chemicals’ used to hold compostable packaging together',
@@ -168,7 +168,7 @@ const data = {
     },
     pricing: {
         title: 'We are an ESG company: we care for social and envirnomental sustainability',
-        image: '../images/container-green.svg',
+        image: 'images/container-green.svg',
         description:
             'In 2020 Singapore’s government took on the Green Plan: a whole-of-nation movement to advance Singapore’s national agenda on sustainable development. Our company is a part of its solution to cultivating a Sustainable Living — 1 of the 5 key programmes of SG Green Plan.',
         priceboxs: [
@@ -195,6 +195,7 @@ const data = {
         ],
 
         title2: 'Get in touch with us to calculate prices for your business',
+        image2: 'images/pricing-botom-image.png',
         bubble: 'We calculate our prices accroding to the amount of containers and deliveries made by your business monthly.',
         contact:
             'Leave your contacts and request, and our manager will reach out to you to establish our futher parntership!',
@@ -204,21 +205,21 @@ const data = {
         members: [
             {
                 id: 'team-member1',
-                image: '../images/hunglam.png',
+                image: 'images/hunglam.png',
                 name: 'Hung Lam',
                 title: 'Founder / CEO',
                 link: '',
             },
             {
                 id: 'team-member2',
-                image: '../images/edwinphua.png',
+                image: 'images/edwinphua.png',
                 name: 'Edwin Phua',
                 title: 'Co-founder / COO',
                 link: '',
             },
             {
                 id: 'team-member3',
-                image: '../images/guillaumecatella.png',
+                image: 'images/guillaumecatella.png',
                 name: 'Guillaume Catella',
                 title: 'Co-founder / CTO',
                 link: '',
@@ -229,11 +230,11 @@ const data = {
     partners: {
         title: 'And Awesome Partners',
         logos: [
-            '../images/chefatwork.png',
-            '../images/stewards.png',
-            '../images/ninjavan.png',
-            '../images/creatella.png',
-            '../images/goa.png',
+            'images/chefatwork.png',
+            'images/stewards.png',
+            'images/ninjavan.png',
+            'images/creatella.png',
+            'images/goa.png',
         ],
     },
 
@@ -249,7 +250,7 @@ const data = {
             socials: [
                 {
                     id: 'social1',
-                    image: '../images/instagram.svg',
+                    image: 'images/instagram.svg',
                     title: 'AwesomeContainers',
                     url: 'https://www.instagram.com/awesomecontainers',
                 },
@@ -264,12 +265,12 @@ const data = {
             planedPlaces: {
                 title: 'Planning to launch in 2022',
                 places: [
-                    'UK',
-                    'EU',
-                    'OSEAN',
-                    'China',
-                    'Vietnam',
-                    'Malaysia',
+                    'UK,',
+                    'EU,',
+                    'OSEAN,',
+                    'China,',
+                    'Vietnam,',
+                    'Malaysia,',
                     'Taiwan',
                 ],
             },
