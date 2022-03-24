@@ -40,7 +40,7 @@ function Footer({ appData }) {
                         {appData.footer.section3.title}
                     </p>
 
-                    <p className='footer-section__item'>
+                    <p className='footer-section__item footer-section__item_type_location'>
                         {appData.footer.section3.currentPlaces.title}
                     </p>
                     <div className='footer-section__place-container'>
@@ -55,7 +55,7 @@ function Footer({ appData }) {
                             )
                         )}
                     </div>
-                    <p className='footer-section__item'>
+                    <p className='footer-section__item footer-section__item_type_location'>
                         {appData.footer.section3.planedPlaces.title}
                     </p>
                     <div className='footer-section__place-container'>
@@ -64,7 +64,7 @@ function Footer({ appData }) {
                                 <p
                                     key={`planedPlace${index}`}
                                     className='footer-section__item footer-section__item_type_place'
-                                >{`${planedPlace},`}</p>
+                                >{`${planedPlace}`}</p>
                             )
                         )}
                     </div>
