@@ -1,14 +1,14 @@
 .workplan__arrow_type_fourth {
     left: 250px;
     top: 150px;
-    transform: rotate(270deg);
+    transform: rotate(270deg) !important;
 }
 
 @media screen and (max-width: 920px) {
     .workplan__arrow_type_fourth {
         left: unset;
         top: unset;
-        transform: unset;
+        transform: unset !important;
         background-image: url(../../../../../public/images/uturnarrow.svg);
         height: 84.5px;
         width: 49.5px;

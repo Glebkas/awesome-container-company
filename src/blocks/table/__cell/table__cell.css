@@ -1,0 +1,16 @@
+.table__cell {
+    display: flex;
+    align-items: center;
+    padding: 20px 13px 20px 13px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1c383c;
+    border-right: solid 1px;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.table__cell:last-of-type {
+    border-right: unset;
+}

@@ -1,14 +1,13 @@
 .workplan__arrow_type_second {
     right: 250px;
     bottom: 130px;
-    transform: rotate(90deg);
+    transform: rotate(90deg) !important;
 }
 
 @media screen and (max-width: 920px) {
     .workplan__arrow_type_second {
         right: unset;
         top: unset;
-        transform: unset;
-
+        transform: unset !important;
     }
 }

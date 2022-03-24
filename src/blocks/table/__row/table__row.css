@@ -1,0 +1,11 @@
+.table__row {
+    display: grid;
+    max-height: 82px;
+    border-bottom: solid 1px;
+
+    grid-template-columns: repeat(6, minmax(168px, 200px));
+}
+
+.table__row:last-of-type {
+    border-bottom: unset;
+}

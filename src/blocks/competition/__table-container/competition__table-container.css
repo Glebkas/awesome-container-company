@@ -1,0 +1,30 @@
+.competition__table-container {
+    display: flex;
+    max-height: 856px;
+    max-width: 1200px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+    margin: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .competition__table-container {
+        overflow-x: scroll;
+    }
+}
+
+.competition__table-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.competition__table-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #e1e1e1;
+}
+
+.competition__table-container::-webkit-scrollbar-thumb {
+    background: #1c383c;
+    border-radius: 10px;
+}

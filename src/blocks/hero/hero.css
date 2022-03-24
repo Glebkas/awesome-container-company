@@ -2,6 +2,8 @@
     padding: 0 40px 0 40px;
     margin: 74px auto 120px auto;
     max-width: 1440px;
+        overflow: hidden;
+
 
 }
 

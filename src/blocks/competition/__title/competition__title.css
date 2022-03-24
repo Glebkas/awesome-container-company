@@ -1,0 +1,25 @@
+.competition__title {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    color: #1c383c;
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+
+@media screen and (max-width: 768) {
+    .competition__title {
+        font-size: 38px;
+        line-height: 45px;
+        margin: 0 0 34px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .competition__title {
+        max-width: 343px;
+        font-size: 28px;
+        line-height: 32px;
+        margin: 0 0 24px 0;
+    }
+}

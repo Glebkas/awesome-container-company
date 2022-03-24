@@ -1,0 +1,28 @@
+.table__header-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px 20px 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border-right: solid 1px;
+    background: white;
+    color: #1c383c;
+    
+}
+
+.table__header-cell:last-of-type {
+    border-right: unset;
+}
+
+
+@media screen and (max-width: 1164px) {
+    .table__header-cell {
+        padding: 7px 20px 10px 20px;
+    }
+}
+
+
+

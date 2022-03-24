@@ -1,14 +1,14 @@
 .workplan__arrow_type_third{
     left: 250px;
     bottom: 130px;
-    transform: rotate(180deg);
+    transform: rotate(180deg) !important;
 }
 
 @media screen and (max-width: 920px) {
     .workplan__arrow_type_third {
         left: unset;
         top: unset;
-        transform: unset;
+        transform: unset !important;
 
     }
 }

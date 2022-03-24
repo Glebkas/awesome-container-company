@@ -1,0 +1,5 @@
+.table__cell-point {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../../public/images/greydot.svg);
+}
