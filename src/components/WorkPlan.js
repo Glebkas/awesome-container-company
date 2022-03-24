@@ -5,7 +5,7 @@ import { textAnimation, workPlanAnimation } from '../utils/animation';
 function WorkPlan(props) {
     return (
         <motion.div
-            viewport={{ amount: 0.2, once: true }}
+            viewport={{ amount: 0.4, once: true }}
             initial='hidden'
             whileInView='visible'
             className='workplan'
