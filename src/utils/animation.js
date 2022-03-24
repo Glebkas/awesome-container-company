@@ -189,7 +189,20 @@ const partnerAnimation = {
         opacity: 1,
         scale: 1,
         transition: { delay: custom * 0.2, duration: 0.4 },
-       
+    }),
+};
+
+const workPlanAnimation = {
+    hidden: {
+        y: 100,
+        scale: 0,
+        opacity: 0,
+    },
+    visible: (custom) => ({
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: { delay: custom * 0.2, duration: 0.4 },
     }),
 };
 
@@ -208,5 +221,6 @@ export {
     pointsBoxAnimation,
     contactFormAnimation,
     teamAnimation,
-    partnerAnimation
+    partnerAnimation,
+    workPlanAnimation,
 };
