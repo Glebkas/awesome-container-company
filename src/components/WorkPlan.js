@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { textAnimation, workPlanAnimation } from '../utils/animation';
+import ContactButton from './ContactButton';
 
 function WorkPlan(props) {
     return (
@@ -45,7 +46,9 @@ function WorkPlan(props) {
                     </React.Fragment>
                 ))}
                 <p className='workplan__caption'>Circular ecosystem</p>
+
             </motion.div>
+            <ContactButton openPopUp={props.openPopUp} class='contact-button' />{' '}
         </motion.div>
     );
 }
