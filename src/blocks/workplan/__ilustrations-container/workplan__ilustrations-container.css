@@ -1,0 +1,19 @@
+.workplan__ilustrations-container {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    height: 685px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .workplan__ilustrations-container {
+        flex-direction: column;
+        height: fit-content;
+    }
+}

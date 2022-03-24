@@ -1,0 +1,13 @@
+.workplan__arrow_type_first {
+    right: 250px;
+    top: 150px;
+}
+
+
+@media screen and (max-width: 920px) {
+    .workplan__arrow_type_first {
+        right: unset;
+        top: unset;
+
+    }
+}

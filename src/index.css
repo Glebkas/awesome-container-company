@@ -76,6 +76,24 @@
 @import url(./blocks/slide/__points-list/slide__points-list.css);
 @import url(./blocks/slide/__points-item/slide__points-item.css);
 
+@import url(./blocks/workplan/workplan.css);
+@import url(./blocks/workplan/__title/workplan__title.css);
+@import url(./blocks/workplan/__ilustrations-container/workplan__ilustrations-container.css);
+@import url(./blocks/workplan/__ilustration-container/workplan__ilustration-container.css);
+@import url(./blocks/workplan/__ilustration-container/_type/workplan__ilustration-container_type_first.css);
+@import url(./blocks/workplan/__ilustration-container/_type/workplan__ilustration-container_type_second.css);
+@import url(./blocks/workplan/__ilustration-container/_type/workplan__ilustration-container_type_third.css);
+@import url(./blocks/workplan/__ilustration-container/_type/workplan__ilustration-container_type_fourth.css);
+@import url(./blocks/workplan/__ilustration-image/workplan__ilustration-image.css);
+@import url(./blocks/workplan/__ilustration-number/workplan__ilustration-number.css);
+@import url(./blocks/workplan/__ilustration-caption/workplan__ilustration-caption.css);
+@import url(./blocks/workplan/__arrow/workplan__arrow.css);
+@import url(./blocks/workplan/__arrow/_type/workplan__arrow_type_first.css);
+@import url(./blocks/workplan/__arrow/_type/workplan__arrow_type_second.css);
+@import url(./blocks/workplan/__arrow/_type/workplan__arrow_type_third.css);
+@import url(./blocks/workplan/__arrow/_type/workplan__arrow_type_fourth.css);
+@import url(./blocks/workplan/__caption/workplan__caption.css);
+
 @import url(./blocks/impact/impact.css);
 @import url(./blocks/impact/__title/impact__title.css);
 @import url(./blocks/impact/__points-container/impact__points-container.css);

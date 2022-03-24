@@ -1,0 +1,18 @@
+.workplan__arrow {
+    position: absolute;
+    background-image: url(../../../../public/images/roundarrow.svg);
+    width: 46.05px;
+    height: 46.2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 920px) {
+    .workplan__arrow {
+        position: unset;
+        background-image: url(../../../../public/images/straightarrow.svg);
+        height: 33px;
+        width: 20px;
+        margin: 40px 0 40px 0;
+    }
+}
