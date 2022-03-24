@@ -7,6 +7,7 @@ import Solution from './Solution';
 import Team from './Team';
 import WorkPlan from './WorkPlan';
 import Partners from './Partners';
+import Competition from './Competition'
 
 function Main(props) {
     return (
@@ -16,6 +17,7 @@ function Main(props) {
             <Solution appData={props.appData} />
             <WorkPlan appData={props.appData} />
             <Impact appData={props.appData} />
+            <Competition appData={props.appData}/>
             <Pricing appData={props.appData} openPopUp={props.openPopUp} />
             <Team appData={props.appData} />
             <Partners appData={props.appData} />
