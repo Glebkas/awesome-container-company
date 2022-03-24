@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "homepage": "https://glebkas.github.io/awesome-container-company/",
+        "homepage": "https://Glebkas.github.io/awesome-container-company",
         "@testing-library/jest-dom": "^5.16.2",
         "@testing-library/react": "^12.1.3",
         "@testing-library/user-event": "^13.5.0",
