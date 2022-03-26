@@ -1,4 +1,6 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 
@@ -12,11 +14,34 @@ export const Contactform = React.forwardRef((props, ref) => {
         reset,
     } = useForm({ mode: 'onChange' });
 
-    const onSubmit = (data) => {
-        alert(JSON.stringify(data));
+    const sendEmail = (formData) => {
+        emailjs
+            .send('gmail', 'template_faaf63p', formData, 'yFSJu2eq24K-axRJu')
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
         setformSent(true);
+
         reset();
     };
+
+    // const onSubmit = (data) => {
+    //     alert(JSON.stringify(data));
+
+    //     emailjs.sendForm('gmail', 'template_faaf63p', data, 'yFSJu2eq24K-axRJu')
+    //     .then((result) => {
+    //         console.log(result.text);
+    //     }, (error) => {
+    //         console.log(error.text);
+    //     });
+    //     setformSent(true);
+    //     reset();
+    // };
 
     return (
         <div className='contact-form'>
@@ -34,7 +59,7 @@ export const Contactform = React.forwardRef((props, ref) => {
                             parntership!
                         </p>
                         <form
-                            onSubmit={handleSubmit(onSubmit)}
+                            onSubmit={handleSubmit(sendEmail)}
                             noValidate
                             className='form'
                             name='contact-form'
@@ -55,6 +80,7 @@ export const Contactform = React.forwardRef((props, ref) => {
                                         : 'form__input'
                                 }
                                 type='text'
+                                name='name'
                                 {...register('name', {
                                     required: `Personal or company name* This field is
                                 required)`,
@@ -83,6 +109,7 @@ export const Contactform = React.forwardRef((props, ref) => {
                                         ? 'form__input form__input_error'
                                         : 'form__input'
                                 }
+                                name='email'
                                 {...register('email', {
                                     required: `Email * (This field is
                                 required)`,
@@ -103,6 +130,7 @@ export const Contactform = React.forwardRef((props, ref) => {
                                 className='form__input'
                                 type='text'
                                 rows='5'
+                                name='message'
                                 {...register('message')}
                             />
 
