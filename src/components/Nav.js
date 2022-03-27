@@ -1,10 +1,18 @@
 import React from 'react';
+import ContactButton from './ContactButton';
+
 import { HashLink } from 'react-router-hash-link';
 
-function Nav() {
+function Nav(props) {
     return (
-        <nav className='nav'>
-            <ul className='nav__links'>
+        <nav className={props.open ? 'nav nav_type_mobile' : 'nav'}>
+            <ul
+                className={
+                    props.open
+                        ? 'nav__links nav__links_type_mobile'
+                        : 'nav__links'
+                }
+            >
                 <HashLink
                     style={{ textDecoration: 'none' }}
                     smooth
@@ -33,11 +41,7 @@ function Nav() {
                 >
                     <li className='nav__link'>Pricing</li>
                 </HashLink>
-                <HashLink
-                    style={{ textDecoration: 'none' }}
-                    smooth
-                    to='/#team'
-                >
+                <HashLink style={{ textDecoration: 'none' }} smooth to='/#team'>
                     <li className='nav__link'>Team</li>
                 </HashLink>
                 <HashLink
@@ -48,6 +52,10 @@ function Nav() {
                     <li className='nav__link'>Contacts</li>
                 </HashLink>
             </ul>
+            <ContactButton
+                openPopUp={props.openPopUp}
+                class='contact-button contact-button_type_header'
+            />
         </nav>
     );
 }
