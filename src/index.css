@@ -13,7 +13,9 @@
 @import url(./blocks/contact-button/_type/contact-button_type_header.css);
 
 @import url(./blocks/nav/nav.css);
+@import url(./blocks/nav/_type/nav_type_mobile.css);
 @import url(./blocks/nav/__links/nav__links.css);
+@import url(./blocks/nav/__links/_type/nav__links_type_mobile.css);
 @import url(./blocks/nav/__link/nav__link.css);
 
 @import url(./blocks/hero/hero.css);
