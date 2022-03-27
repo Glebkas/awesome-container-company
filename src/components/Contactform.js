@@ -1,5 +1,5 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
@@ -16,7 +16,12 @@ export const Contactform = React.forwardRef((props, ref) => {
 
     const sendEmail = (formData) => {
         emailjs
-            .send('gmail', 'template_faaf63p', formData, 'yFSJu2eq24K-axRJu')
+            .send(
+                'service_14n851e',
+                'template_faaf63p',
+                formData,
+                'yFSJu2eq24K-axRJu'
+            )
             .then(
                 (result) => {
                     console.log(result.text);
@@ -29,19 +34,6 @@ export const Contactform = React.forwardRef((props, ref) => {
 
         reset();
     };
-
-    // const onSubmit = (data) => {
-    //     alert(JSON.stringify(data));
-
-    //     emailjs.sendForm('gmail', 'template_faaf63p', data, 'yFSJu2eq24K-axRJu')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-    //     setformSent(true);
-    //     reset();
-    // };
 
     return (
         <div className='contact-form'>
