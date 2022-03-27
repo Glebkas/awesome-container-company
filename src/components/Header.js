@@ -23,7 +23,7 @@ function Header(props) {
                             : 'header__hamburger'
                     }
                 ></button>
-                <Nav></Nav>
+                <Nav open={open}></Nav>
                 <ContactButton
                     openPopUp={props.openPopUp}
                     class='contact-button contact-button_type_header'
