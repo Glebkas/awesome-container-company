@@ -1,0 +1,11 @@
+.contact-button_type_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .contact-button_type_mobile {
+        display: flex;
+        margin-top: 112px;
+        transition: opacity 0.6s;
+    }
+}

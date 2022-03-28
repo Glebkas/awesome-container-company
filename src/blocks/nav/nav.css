@@ -1,5 +1,5 @@
 .nav {
-    font-size: 14px;
+    display: block;
 }
 
 @media screen and (max-width: 1000px) {

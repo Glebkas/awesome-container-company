@@ -11,6 +11,7 @@
 
 @import url(./blocks/contact-button/contact-button.css);
 @import url(./blocks/contact-button/_type/contact-button_type_header.css);
+@import url(./blocks/contact-button/_type/contact-button_type_mobile.css);
 
 @import url(./blocks/nav/nav.css);
 @import url(./blocks/nav/_type/nav_type_mobile.css);
