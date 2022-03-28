@@ -52,10 +52,12 @@ function Nav(props) {
                     <li className='nav__link'>Contacts</li>
                 </HashLink>
             </ul>
-            <ContactButton
-                openPopUp={props.openPopUp}
-                class='contact-button contact-button_type_header'
-            />
+            {props.open && (
+                <ContactButton
+                    openPopUp={props.openPopUp}
+                    class='contact-button contact-button_type_mobile'
+                />
+            )}
         </nav>
     );
 }
