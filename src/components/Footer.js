@@ -20,7 +20,7 @@ function Footer({ appData }) {
                         {appData.footer.section2.title}
                     </p>
                     {appData.footer.section2.socials.map((social) => (
-                        <div key={social.id} className='footer-section__item'>
+                        <div key={social.id} className='footer-section__item footer-section__item_type_social'>
                             <img
                                 className='footer-section__social-icon'
                                 src={social.image}
