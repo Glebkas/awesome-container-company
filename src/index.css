@@ -164,6 +164,7 @@
 @import url(./blocks/footer-section/__title/footer-section__title.css);
 @import url(./blocks/footer-section/__container/footer-section__place-container.css);
 @import url(./blocks/footer-section/__item/footer-section__item.css);
+@import url(./blocks/footer-section/__item/_type/footer-section__item_type_social.css);
 @import url(./blocks/footer-section/__item/_type/footer-section__item_type_location.css);
 @import url(./blocks/footer-section/_type/footer-section_type_place.css);
 @import url(./blocks/footer-section/__item/_type/footer-section__item_type_place.css);
