@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "private": true,
     "homepage": "https://glebkas.github.io/awesome-container-company",
-
     "dependencies": {
         "@emailjs/browser": "^3.4.0",
         "@testing-library/jest-dom": "^5.16.3",
