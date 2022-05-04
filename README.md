@@ -9,8 +9,6 @@
 -   [My process](#my-process)
     -   [Built with](#built-with)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -47,7 +45,3 @@ Users should be able to:
 ## Author
 
 -   Website - [Add your name here](https://www.your-site.com)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
